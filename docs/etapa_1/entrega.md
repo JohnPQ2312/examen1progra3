@@ -204,4 +204,6 @@ Los controladores expondrán las mismas operaciones de su servicio y delegarán 
 
 | Integrante | Aportes principales |
 |---|---|
-| | |
+| John Perez Quesada | Preparación del repositorio, elaboración del análisis y diseño con asistencia de IA, incorporación de entidades, enumeraciones, interfaces y excepciones, y comprobación de compilación. |
+| Joe Sandoval Diaz | Sin aportes en la Etapa 1 al momento de este commit. |
+| Joshua Barrantes Granados | Sin aportes en la Etapa 1 al momento de este commit. |
