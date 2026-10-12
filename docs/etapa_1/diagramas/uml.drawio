@@ -1,0 +1,1297 @@
+<mxfile host="app.diagrams.net" compressed="false" pages="5">
+  <diagram id="uml-etapa-1-caso-1" name="01 — Vista completa">
+    <mxGraphModel dx="2925" dy="1621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3600" pageHeight="3700" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=32;fontColor=#16324f;fontStyle=1;" value="Préstamos de equipos tecnológicos — UML de clases y capas" vertex="1">
+          <mxGeometry height="45" width="3450" x="50" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=21;fontColor=#334155;fontStyle=0;" value="Etapa 1: estructura actual del código y diseño de persistencia previsto para la Etapa 2." vertex="1">
+          <mxGeometry height="35" width="3450" x="50" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-model" parent="1" style="rounded=1;arcSize=2;fillColor=#eff6ff;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="2020" width="1000" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-model-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.model" vertex="1">
+          <mxGeometry height="32" width="960" x="60" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-controller" parent="1" style="rounded=1;arcSize=2;fillColor=#f0fdfa;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="445" width="2400" x="1130" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-controller-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.controller" vertex="1">
+          <mxGeometry height="32" width="2360" x="1150" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-service" parent="1" style="rounded=1;arcSize=2;fillColor=#f0fdf4;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="530" width="2400" x="1130" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-service-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.service" vertex="1">
+          <mxGeometry height="32" width="2360" x="1150" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository" parent="1" style="rounded=1;arcSize=2;fillColor=#faf5ff;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="1080" width="2400" x="1130" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.repository" vertex="1">
+          <mxGeometry height="32" width="2360" x="1150" y="1242" as="geometry" />
+        </mxCell>
+        <mxCell id="external-java" parent="1" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="190" width="1000" x="40" y="2190" as="geometry" />
+        </mxCell>
+        <mxCell id="external-java-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«biblioteca externa» java.lang" vertex="1">
+          <mxGeometry height="32" width="960" x="60" y="2202" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-exception" parent="1" style="rounded=1;arcSize=2;fillColor=#fff1f2;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="830" width="1000" x="40" y="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-exception-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.exception" vertex="1">
+          <mxGeometry height="32" width="960" x="60" y="2412" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-app" parent="1" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="700" width="1410" x="1130" y="2530" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-app-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.app" vertex="1">
+          <mxGeometry height="32" width="1370" x="1150" y="2542" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-config" parent="1" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="480" width="930" x="2600" y="2530" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-config-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«package» cr.ac.una.config" vertex="1">
+          <mxGeometry height="32" width="890" x="2620" y="2542" as="geometry" />
+        </mxCell>
+        <mxCell id="external-database" parent="1" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="180" width="930" x="2600" y="3050" as="geometry" />
+        </mxCell>
+        <mxCell id="external-database-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="«sistema externo» MySQL" vertex="1">
+          <mxGeometry height="32" width="890" x="2620" y="3062" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="504" width="430" x="80" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-header" parent="Solicitante" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="Solicitante" vertex="1">
+          <mxGeometry height="50" width="430" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-section-0" parent="Solicitante" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- identificacion: String&lt;br&gt;- nombre: String&lt;br&gt;- correo: String&lt;br&gt;- tipo: TipoSolicitante" vertex="1">
+          <mxGeometry height="112" width="430" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-section-1" parent="Solicitante" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ Solicitante()&lt;br&gt;+ Solicitante(identificacion: String,&lt;br&gt;nombre: String, correo: String, tipo:&lt;br&gt;  TipoSolicitante)&lt;br&gt;+ getIdentificacion(): String&lt;br&gt;+ setIdentificacion(identificacion: String):&lt;br&gt;  void&lt;br&gt;+ getNombre(): String&lt;br&gt;+ setNombre(nombre: String): void&lt;br&gt;+ getCorreo(): String&lt;br&gt;+ setCorreo(correo: String): void&lt;br&gt;+ getTipo(): TipoSolicitante&lt;br&gt;+ setTipo(tipo: TipoSolicitante): void&lt;br&gt;+ toString(): String" vertex="1">
+          <mxGeometry height="342" width="430" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="458" width="450" x="550" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-header" parent="Equipo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="Equipo" vertex="1">
+          <mxGeometry height="50" width="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-section-0" parent="Equipo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- codigo: String&lt;br&gt;- descripcion: String&lt;br&gt;- tipo: String&lt;br&gt;- estado: EstadoEquipo" vertex="1">
+          <mxGeometry height="112" width="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-section-1" parent="Equipo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ Equipo()&lt;br&gt;+ Equipo(codigo: String, descripcion: String,&lt;br&gt;tipo: String, estado: EstadoEquipo)&lt;br&gt;+ getCodigo(): String&lt;br&gt;+ setCodigo(codigo: String): void&lt;br&gt;+ getDescripcion(): String&lt;br&gt;+ setDescripcion(descripcion: String): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ setTipo(tipo: String): void&lt;br&gt;+ getEstado(): EstadoEquipo&lt;br&gt;+ setEstado(estado: EstadoEquipo): void&lt;br&gt;+ toString(): String" vertex="1">
+          <mxGeometry height="296" width="450" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="138" width="430" x="80" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante-header" parent="TipoSolicitante" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«enumeration»&lt;br&gt;TipoSolicitante" vertex="1">
+          <mxGeometry height="72" width="430" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante-section-0" parent="TipoSolicitante" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="ESTUDIANTE&lt;br&gt;FUNCIONARIO" vertex="1">
+          <mxGeometry height="66" width="430" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="161" width="450" x="550" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo-header" parent="EstadoEquipo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«enumeration»&lt;br&gt;EstadoEquipo" vertex="1">
+          <mxGeometry height="72" width="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo-section-0" parent="EstadoEquipo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="DISPONIBLE&lt;br&gt;PRESTADO&lt;br&gt;EN_REPARACION" vertex="1">
+          <mxGeometry height="89" width="450" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="688" width="790" x="180" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-header" parent="Prestamo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="Prestamo" vertex="1">
+          <mxGeometry height="50" width="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-section-0" parent="Prestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- id: Integer&lt;br&gt;- solicitante: Solicitante&lt;br&gt;- equipo: Equipo&lt;br&gt;- fechaPrestamo: LocalDate&lt;br&gt;- fechaDevolucionEsperada: LocalDate&lt;br&gt;- fechaDevolucionReal: LocalDate&lt;br&gt;- estado: EstadoPrestamo" vertex="1">
+          <mxGeometry height="181" width="790" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-section-1" parent="Prestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ Prestamo()&lt;br&gt;+ Prestamo(id: Integer, solicitante: Solicitante, equipo: Equipo, fechaPrestamo:&lt;br&gt;LocalDate, fechaDevolucionEsperada: LocalDate, fechaDevolucionReal: LocalDate,&lt;br&gt;estado: EstadoPrestamo)&lt;br&gt;+ getId(): Integer&lt;br&gt;+ setId(id: Integer): void&lt;br&gt;+ getSolicitante(): Solicitante&lt;br&gt;+ setSolicitante(solicitante: Solicitante): void&lt;br&gt;+ getEquipo(): Equipo&lt;br&gt;+ setEquipo(equipo: Equipo): void&lt;br&gt;+ getFechaPrestamo(): LocalDate&lt;br&gt;+ setFechaPrestamo(fechaPrestamo: LocalDate): void&lt;br&gt;+ getFechaDevolucionEsperada(): LocalDate&lt;br&gt;+ setFechaDevolucionEsperada(fechaDevolucionEsperada: LocalDate): void&lt;br&gt;+ getFechaDevolucionReal(): LocalDate&lt;br&gt;+ setFechaDevolucionReal(fechaDevolucionReal: LocalDate): void&lt;br&gt;+ getEstado(): EstadoPrestamo&lt;br&gt;+ setEstado(estado: EstadoPrestamo): void&lt;br&gt;+ toString(): String" vertex="1">
+          <mxGeometry height="457" width="790" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="138" width="450" x="390" y="1980" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo-header" parent="EstadoPrestamo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«enumeration»&lt;br&gt;EstadoPrestamo" vertex="1">
+          <mxGeometry height="72" width="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo-section-0" parent="EstadoPrestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="ACTIVO&lt;br&gt;DEVUELTO" vertex="1">
+          <mxGeometry height="66" width="450" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="228" width="740" x="1160" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-header" parent="SolicitanteController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="SolicitanteController" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-section-0" parent="SolicitanteController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- solicitanteService: SolicitanteService {readOnly}" vertex="1">
+          <mxGeometry height="43" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-section-1" parent="SolicitanteController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ SolicitanteController(solicitanteService: SolicitanteService)&lt;br&gt;+ registrar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" vertex="1">
+          <mxGeometry height="135" width="740" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="274" width="740" x="1160" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-header" parent="SolicitanteService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="SolicitanteService" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-section-0" parent="SolicitanteService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- solicitanteRepository: SolicitanteRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" vertex="1">
+          <mxGeometry height="66" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-section-1" parent="SolicitanteService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ SolicitanteService(solicitanteRepository: SolicitanteRepository,&lt;br&gt;prestamoRepository: PrestamoRepository)&lt;br&gt;+ registrar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" vertex="1">
+          <mxGeometry height="158" width="740" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="227" width="740" x="1160" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-header" parent="SolicitanteRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«interface»&lt;br&gt;SolicitanteRepository" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-section-0" parent="SolicitanteRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-section-1" parent="SolicitanteRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" vertex="1">
+          <mxGeometry height="112" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" value="" vertex="1">
+          <mxGeometry height="250" width="740" x="1160" y="1870" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-header" parent="SolicitanteRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«prevista — Etapa 2»&lt;br&gt;SolicitanteRepositoryJdbc" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-0" parent="SolicitanteRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Atributos por definir en la Etapa 2" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-1" parent="SolicitanteRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void&lt;br&gt;Implementa el contrato de su interfaz." vertex="1">
+          <mxGeometry height="135" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="228" width="740" x="1960" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-header" parent="EquipoController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="EquipoController" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-section-0" parent="EquipoController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- equipoService: EquipoService {readOnly}" vertex="1">
+          <mxGeometry height="43" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-section-1" parent="EquipoController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ EquipoController(equipoService: EquipoService)&lt;br&gt;+ registrar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" vertex="1">
+          <mxGeometry height="135" width="740" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="274" width="740" x="1960" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-header" parent="EquipoService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="EquipoService" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-section-0" parent="EquipoService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- equipoRepository: EquipoRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" vertex="1">
+          <mxGeometry height="66" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-section-1" parent="EquipoService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ EquipoService(equipoRepository: EquipoRepository, prestamoRepository:&lt;br&gt;  PrestamoRepository)&lt;br&gt;+ registrar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" vertex="1">
+          <mxGeometry height="158" width="740" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="227" width="740" x="1960" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-header" parent="EquipoRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«interface»&lt;br&gt;EquipoRepository" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-section-0" parent="EquipoRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-section-1" parent="EquipoRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" vertex="1">
+          <mxGeometry height="112" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" value="" vertex="1">
+          <mxGeometry height="250" width="740" x="1960" y="1870" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-header" parent="EquipoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«prevista — Etapa 2»&lt;br&gt;EquipoRepositoryJdbc" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-0" parent="EquipoRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Atributos por definir en la Etapa 2" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-1" parent="EquipoRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void&lt;br&gt;Implementa el contrato de su interfaz." vertex="1">
+          <mxGeometry height="135" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="228" width="740" x="2760" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-header" parent="PrestamoController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="PrestamoController" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-section-0" parent="PrestamoController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- prestamoService: PrestamoService {readOnly}" vertex="1">
+          <mxGeometry height="43" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-section-1" parent="PrestamoController" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ PrestamoController(prestamoService: PrestamoService)&lt;br&gt;+ registrarPrestamo(identificacion: String, codigoEquipo: String,&lt;br&gt;fechaDevolucionEsperada: LocalDate): Prestamo&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ registrarDevolucion(idPrestamo: Integer): Prestamo" vertex="1">
+          <mxGeometry height="135" width="740" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="297" width="740" x="2760" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-header" parent="PrestamoService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="PrestamoService" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-section-0" parent="PrestamoService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- solicitanteRepository: SolicitanteRepository {readOnly}&lt;br&gt;- equipoRepository: EquipoRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" vertex="1">
+          <mxGeometry height="89" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-section-1" parent="PrestamoService" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ PrestamoService(solicitanteRepository: SolicitanteRepository,&lt;br&gt;equipoRepository: EquipoRepository, prestamoRepository: PrestamoRepository)&lt;br&gt;+ registrarPrestamo(identificacion: String, codigoEquipo: String,&lt;br&gt;fechaDevolucionEsperada: LocalDate): Prestamo&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ registrarDevolucion(idPrestamo: Integer): Prestamo" vertex="1">
+          <mxGeometry height="158" width="740" y="139" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="296" width="740" x="2760" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-header" parent="PrestamoRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«interface»&lt;br&gt;PrestamoRepository" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-section-0" parent="PrestamoRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-section-1" parent="PrestamoRepository" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertarConEstadoEquipo(prestamo: Prestamo): Prestamo&lt;br&gt;+ buscarPorId(id: Integer): Optional&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ contarActivosPorSolicitante(identificacion: String): int&lt;br&gt;+ existeActivoPorEquipo(codigo: String): boolean&lt;br&gt;+ actualizarConEstadoEquipo(prestamo: Prestamo): void" vertex="1">
+          <mxGeometry height="181" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" value="" vertex="1">
+          <mxGeometry height="319" width="740" x="2760" y="1870" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-header" parent="PrestamoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«prevista — Etapa 2»&lt;br&gt;PrestamoRepositoryJdbc" vertex="1">
+          <mxGeometry height="72" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-0" parent="PrestamoRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Atributos por definir en la Etapa 2" vertex="1">
+          <mxGeometry height="43" width="740" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-1" parent="PrestamoRepositoryJdbc" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ insertarConEstadoEquipo(prestamo: Prestamo): Prestamo&lt;br&gt;+ buscarPorId(id: Integer): Optional&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ contarActivosPorSolicitante(identificacion: String): int&lt;br&gt;+ existeActivoPorEquipo(codigo: String): boolean&lt;br&gt;+ actualizarConEstadoEquipo(prestamo: Prestamo): void&lt;br&gt;Implementa el contrato de su interfaz." vertex="1">
+          <mxGeometry height="204" width="740" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="jdbc-note" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" value="Clases JDBC aún no creadas.&lt;br&gt;Sus operaciones implementarán&lt;br&gt;los contratos mostrados arriba." vertex="1">
+          <mxGeometry height="120" width="330" x="1170" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="115" width="470" x="310" y="2250" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException-header" parent="RuntimeException" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="«biblioteca Java»&lt;br&gt;java.lang.RuntimeException" vertex="1">
+          <mxGeometry height="72" width="470" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException-section-0" parent="RuntimeException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Miembros de la biblioteca omitidos" vertex="1">
+          <mxGeometry height="43" width="470" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="136" width="430" x="80" y="2530" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-header" parent="ValidacionException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="ValidacionException" vertex="1">
+          <mxGeometry height="50" width="430" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-section-0" parent="ValidacionException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="430" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-section-1" parent="ValidacionException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ ValidacionException(mensaje: String)" vertex="1">
+          <mxGeometry height="43" width="430" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="136" width="450" x="550" y="2530" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-header" parent="EquipoNoDisponibleException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="EquipoNoDisponibleException" vertex="1">
+          <mxGeometry height="50" width="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-section-0" parent="EquipoNoDisponibleException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-section-1" parent="EquipoNoDisponibleException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ EquipoNoDisponibleException(mensaje: String)" vertex="1">
+          <mxGeometry height="43" width="450" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="136" width="430" x="80" y="2850" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-header" parent="LimitePrestamosException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="LimitePrestamosException" vertex="1">
+          <mxGeometry height="50" width="430" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-section-0" parent="LimitePrestamosException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="430" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-section-1" parent="LimitePrestamosException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ LimitePrestamosException(mensaje: String)" vertex="1">
+          <mxGeometry height="43" width="430" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="182" width="450" x="550" y="2850" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-header" parent="DatosException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="DatosException" vertex="1">
+          <mxGeometry height="50" width="450" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-section-0" parent="DatosException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-section-1" parent="DatosException" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="+ DatosException(mensaje: String)&lt;br&gt;+ DatosException(mensaje: String, causa:&lt;br&gt;  Throwable)" vertex="1">
+          <mxGeometry height="89" width="450" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptions-note-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Uso previsto en Service: validación, equipo no disponible" vertex="1">
+          <mxGeometry height="32" width="920" x="80" y="3110" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptions-note-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="y límite de préstamos. DatosException conserva la causa de JDBC." vertex="1">
+          <mxGeometry height="32" width="920" x="80" y="3145" as="geometry" />
+        </mxCell>
+        <mxCell id="App" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="159" width="520" x="1160" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="App-header" parent="App" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="App" vertex="1">
+          <mxGeometry height="50" width="520" as="geometry" />
+        </mxCell>
+        <mxCell id="App-section-0" parent="App" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="Sin atributos declarados" vertex="1">
+          <mxGeometry height="43" width="520" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="App-section-1" parent="App" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;&lt;br&gt;&lt;u&gt;- probarConexion(): void&lt;/u&gt;" vertex="1">
+          <mxGeometry height="66" width="520" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="205" width="740" x="1760" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-header" parent="Consola" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="Consola" vertex="1">
+          <mxGeometry height="50" width="740" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-section-0" parent="Consola" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="&lt;u&gt;- ENTRADA: Scanner {readOnly}&lt;/u&gt;" vertex="1">
+          <mxGeometry height="43" width="740" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-section-1" parent="Consola" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- Consola()&lt;br&gt;&lt;u&gt;+ leerTexto(mensaje: String): String&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ leerEntero(mensaje: String): int&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ titulo(texto: String): void&lt;/u&gt;" vertex="1">
+          <mxGeometry height="112" width="740" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="251" width="850" x="2640" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-header" parent="ConexionBD" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" value="ConexionBD" vertex="1">
+          <mxGeometry height="50" width="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-section-0" parent="ConexionBD" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="&lt;u&gt;- ARCHIVO: String {readOnly}&lt;/u&gt;&lt;br&gt;&lt;u&gt;- url: String&lt;/u&gt;&lt;br&gt;&lt;u&gt;- usuario: String&lt;/u&gt;&lt;br&gt;&lt;u&gt;- clave: String&lt;/u&gt;" vertex="1">
+          <mxGeometry height="112" width="850" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-section-1" parent="ConexionBD" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" value="- ConexionBD()&lt;br&gt;&lt;u&gt;+ obtenerConexion(): Connection {throws SQLException}&lt;/u&gt;&lt;br&gt;&lt;u&gt;- cargarConfiguracion(): void {throws SQLException}&lt;/u&gt;" vertex="1">
+          <mxGeometry height="89" width="850" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="app-note-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" value="App actual: menú para probar la conexión. En Etapa 2 ensamblará" vertex="1">
+          <mxGeometry height="32" width="1330" x="1170" y="3005" as="geometry" />
+        </mxCell>
+        <mxCell id="app-note-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" value="los repositorios, servicios y controladores, y mostrará las operaciones." vertex="1">
+          <mxGeometry height="32" width="1330" x="1170" y="3040" as="geometry" />
+        </mxCell>
+        <mxCell id="prestamo-solicitante" edge="1" parent="1" source="Prestamo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;entryX=0;entryY=0.5;endArrow=open;endFill=0;" target="Solicitante" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1524" />
+              <mxPoint x="60" y="482" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-solicitante-source" connectable="0" parent="prestamo-solicitante" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.93" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-solicitante-target" connectable="0" parent="prestamo-solicitante" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.93" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo" edge="1" parent="1" source="Prestamo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=open;endFill=0;" target="Equipo" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="1524" />
+              <mxPoint x="1020" y="459" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo-source" connectable="0" parent="prestamo-equipo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.93" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo-target" connectable="0" parent="prestamo-equipo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.93" y="-18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-enum" edge="1" parent="1" source="Solicitante" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;" target="TipoSolicitante" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-enum" edge="1" parent="1" source="Equipo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;" target="EstadoEquipo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-enum" edge="1" parent="1" source="Prestamo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;" target="EstadoPrestamo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-controller-service" edge="1" parent="1" source="SolicitanteController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;" target="SolicitanteService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-jdbc-interface" edge="1" parent="1" source="SolicitanteRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;" target="SolicitanteRepository" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-controller-service" edge="1" parent="1" source="EquipoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;" target="EquipoService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-jdbc-interface" edge="1" parent="1" source="EquipoRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;" target="EquipoRepository" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-controller-service" edge="1" parent="1" source="PrestamoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;" target="PrestamoService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-jdbc-interface" edge="1" parent="1" source="PrestamoRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;" target="PrestamoRepository" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-service-repo" edge="1" parent="1" source="SolicitanteService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="SolicitanteRepository" value="solicitanteRepository">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="125.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-service-repo" edge="1" parent="1" source="EquipoService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.3918918918918919;exitY=1;entryX=0.3918918918918919;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="EquipoRepository" value="equipoRepository">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="125.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-service-repo" edge="1" parent="1" source="PrestamoService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.8783783783783784;exitY=1;entryX=0.8783783783783784;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="PrestamoRepository" value="prestamoRepository">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="114" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-uses-Prestamo-repository" edge="1" parent="1" source="SolicitanteService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7027027027027027;exitY=1;entryX=0.44594594594594594;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="PrestamoRepository" value="prestamoRepository">
+          <mxGeometry relative="1" x="-0.1092" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1680" y="1080" />
+              <mxPoint x="3090" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-uses-Prestamo-repository" edge="1" parent="1" source="EquipoService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7027027027027027;exitY=1;entryX=0.7162162162162162;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="PrestamoRepository" value="prestamoRepository">
+          <mxGeometry relative="1" x="-0.4324" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2480" y="1120" />
+              <mxPoint x="3290" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-uses-Solicitante-repository" edge="1" parent="1" source="PrestamoService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.12162162162162163;exitY=1;entryX=0.7567567567567568;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="SolicitanteRepository" value="solicitanteRepository">
+          <mxGeometry relative="1" x="-0.1485" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2850" y="1160" />
+              <mxPoint x="1720" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-uses-Equipo-repository" edge="1" parent="1" source="PrestamoService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.36486486486486486;exitY=1;entryX=0.7702702702702703;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="EquipoRepository" value="equipoRepository">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3030" y="1200" />
+              <mxPoint x="2530" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-model-types" edge="1" parent="1" source="pkg-controller" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;entryX=1;entryY=0.17326732673267325;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="pkg-model" value="«use»">
+          <mxGeometry relative="1" x="0.0247" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="372.5" />
+              <mxPoint x="1080" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-model-types" edge="1" parent="1" source="pkg-service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;entryX=1;entryY=0.47029702970297027;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="pkg-model" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="915" />
+              <mxPoint x="1080" y="1100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="repository-model-types" edge="1" parent="1" source="pkg-repository" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;entryX=1;entryY=0.8168316831683168;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="pkg-model" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="1770" />
+              <mxPoint x="1070" y="1800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ValidacionException-extends" edge="1" parent="1" source="ValidacionException" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.22093023255813954;exitY=0.0;entryX=0.44680851063829785;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="RuntimeException" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="2470" />
+              <mxPoint x="520" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-extends" edge="1" parent="1" source="EquipoNoDisponibleException" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7222222222222222;exitY=0.0;entryX=0.8829787234042553;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="RuntimeException" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="875" y="2490" />
+              <mxPoint x="725" y="2490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LimitePrestamosException-extends" edge="1" parent="1" source="LimitePrestamosException" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.0;exitY=0.5;entryX=0.3404255319148936;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="RuntimeException" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="2918" />
+              <mxPoint x="60" y="2450" />
+              <mxPoint x="470" y="2450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DatosException-extends" edge="1" parent="1" source="DatosException" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1.0;exitY=0.5;entryX=0.6702127659574468;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="RuntimeException" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="2941" />
+              <mxPoint x="1020" y="2510" />
+              <mxPoint x="625" y="2510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app-consola" edge="1" parent="1" source="App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;endArrow=open;endFill=0;" target="Consola" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="app-config" edge="1" parent="1" source="App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;endArrow=open;endFill=0;" target="ConexionBD" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="2960" />
+              <mxPoint x="2570" y="2960" />
+              <mxPoint x="2570" y="2735.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app-controllers-future" edge="1" parent="1" source="App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;entryX=0;entryY=0.24719101123595505;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;entryPerimeter=0;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="«use» previsto">
+          <mxGeometry relative="1" x="-0.9229" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1100" y="2689.5" />
+              <mxPoint x="1100" y="260" />
+            </Array>
+            <mxPoint x="1180" y="2689.5" as="sourcePoint" />
+            <mxPoint x="1180" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-jdbc-config" edge="1" parent="1" source="SolicitanteRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.4235294117647059;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="ConexionBD" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="2370" />
+              <mxPoint x="3000" y="2370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-jdbc-config" edge="1" parent="1" source="EquipoRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="ConexionBD" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2330" y="2405" />
+              <mxPoint x="3065" y="2405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-jdbc-config" edge="1" parent="1" source="PrestamoRepositoryJdbc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.8;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;" target="ConexionBD" value="«use»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3130" y="2440" />
+              <mxPoint x="3320" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conexion-mysql" edge="1" parent="1" source="ConexionBD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3065" y="3109.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" value="" vertex="1">
+          <mxGeometry height="310" width="3480" x="50" y="3310" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" value="Cómo leer el diagrama y estado de implementación" vertex="1">
+          <mxGeometry height="32" width="3440" x="70" y="3322" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-0" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="+ público; − privado. Métodos y atributos subrayados: static. {readOnly}: atributo final." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3375" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Línea continua con flecha abierta: referencia conservada por la clase. Línea discontinua con flecha abierta: dependencia / uso." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3405" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Triángulo vacío + línea discontinua: una clase implementa una interfaz. Triángulo vacío + línea continua: herencia." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3435" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="1: exactamente uno. 0..*: cero o varios préstamos históricos. Las entidades no tienen colecciones inversas en el código actual." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3465" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Naranja / «prevista — Etapa 2»: diseño todavía sin implementación. Java y MySQL están en recuadros externos separados." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3495" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="PrestamoRepositoryJdbc persistirá préstamo + estado del equipo en la misma Connection / transacción, con commit o rollback." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3525" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Controllers delegan; Services aplicarán las reglas y tienen cuerpos pendientes. JDBC ejecutará SQL y conservará la causa en DatosException." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3555" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" value="Service → Repository: cada línea lleva el nombre de su atributo; los cruces con salto no representan una unión." vertex="1">
+          <mxGeometry height="28" width="3425" x="75" y="3585" as="geometry" />
+        </mxCell>
+        <mxCell id="mFE-69XwwkMl2efQjkPp-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=light-dark(#FFFFFF,#001933);" value="&lt;div&gt;&lt;span style=&quot;font-family: Arial; font-size: 21px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-family: Arial; font-size: 21px;&quot;&gt;«database»&lt;/span&gt;&lt;br style=&quot;font-family: Arial; font-size: 21px;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 21px;&quot;&gt;MySQL: examen_progra3&lt;/span&gt;" vertex="1">
+          <mxGeometry height="112" width="380" x="2875" y="3118" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uml-detail-2" name="02 — Modelo">
+    <mxGraphModel dx="1080" dy="2180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="2180" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pkg-model" value="" style="rounded=1;arcSize=2;fillColor=#eff6ff;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="20.0" y="100.0" width="1000" height="2020" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-model-title" value="«package» cr.ac.una.model" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="112.0" width="960" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="180.0" width="430" height="504" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-header" value="Solicitante" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="Solicitante">
+          <mxGeometry x="0" y="0" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-section-0" value="- identificacion: String&lt;br&gt;- nombre: String&lt;br&gt;- correo: String&lt;br&gt;- tipo: TipoSolicitante" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Solicitante">
+          <mxGeometry x="0" y="50" width="430" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-section-1" value="+ Solicitante()&lt;br&gt;+ Solicitante(identificacion: String,&lt;br&gt;nombre: String, correo: String, tipo:&lt;br&gt;  TipoSolicitante)&lt;br&gt;+ getIdentificacion(): String&lt;br&gt;+ setIdentificacion(identificacion: String):&lt;br&gt;  void&lt;br&gt;+ getNombre(): String&lt;br&gt;+ setNombre(nombre: String): void&lt;br&gt;+ getCorreo(): String&lt;br&gt;+ setCorreo(correo: String): void&lt;br&gt;+ getTipo(): TipoSolicitante&lt;br&gt;+ setTipo(tipo: TipoSolicitante): void&lt;br&gt;+ toString(): String" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Solicitante">
+          <mxGeometry x="0" y="162" width="430" height="342" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="530.0" y="180.0" width="450" height="458" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-header" value="Equipo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="Equipo">
+          <mxGeometry x="0" y="0" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-section-0" value="- codigo: String&lt;br&gt;- descripcion: String&lt;br&gt;- tipo: String&lt;br&gt;- estado: EstadoEquipo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Equipo">
+          <mxGeometry x="0" y="50" width="450" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-section-1" value="+ Equipo()&lt;br&gt;+ Equipo(codigo: String, descripcion: String,&lt;br&gt;tipo: String, estado: EstadoEquipo)&lt;br&gt;+ getCodigo(): String&lt;br&gt;+ setCodigo(codigo: String): void&lt;br&gt;+ getDescripcion(): String&lt;br&gt;+ setDescripcion(descripcion: String): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ setTipo(tipo: String): void&lt;br&gt;+ getEstado(): EstadoEquipo&lt;br&gt;+ setEstado(estado: EstadoEquipo): void&lt;br&gt;+ toString(): String" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Equipo">
+          <mxGeometry x="0" y="162" width="450" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="820.0" width="430" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante-header" value="«enumeration»&lt;br&gt;TipoSolicitante" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="TipoSolicitante">
+          <mxGeometry x="0" y="0" width="430" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoSolicitante-section-0" value="ESTUDIANTE&lt;br&gt;FUNCIONARIO" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="TipoSolicitante">
+          <mxGeometry x="0" y="72" width="430" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="530.0" y="820.0" width="450" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo-header" value="«enumeration»&lt;br&gt;EstadoEquipo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EstadoEquipo">
+          <mxGeometry x="0" y="0" width="450" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoEquipo-section-0" value="DISPONIBLE&lt;br&gt;PRESTADO&lt;br&gt;EN_REPARACION" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EstadoEquipo">
+          <mxGeometry x="0" y="72" width="450" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="160.0" y="1130.0" width="790" height="688" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-header" value="Prestamo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="Prestamo">
+          <mxGeometry x="0" y="0" width="790" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-section-0" value="- id: Integer&lt;br&gt;- solicitante: Solicitante&lt;br&gt;- equipo: Equipo&lt;br&gt;- fechaPrestamo: LocalDate&lt;br&gt;- fechaDevolucionEsperada: LocalDate&lt;br&gt;- fechaDevolucionReal: LocalDate&lt;br&gt;- estado: EstadoPrestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Prestamo">
+          <mxGeometry x="0" y="50" width="790" height="181" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-section-1" value="+ Prestamo()&lt;br&gt;+ Prestamo(id: Integer, solicitante: Solicitante, equipo: Equipo, fechaPrestamo:&lt;br&gt;LocalDate, fechaDevolucionEsperada: LocalDate, fechaDevolucionReal: LocalDate,&lt;br&gt;estado: EstadoPrestamo)&lt;br&gt;+ getId(): Integer&lt;br&gt;+ setId(id: Integer): void&lt;br&gt;+ getSolicitante(): Solicitante&lt;br&gt;+ setSolicitante(solicitante: Solicitante): void&lt;br&gt;+ getEquipo(): Equipo&lt;br&gt;+ setEquipo(equipo: Equipo): void&lt;br&gt;+ getFechaPrestamo(): LocalDate&lt;br&gt;+ setFechaPrestamo(fechaPrestamo: LocalDate): void&lt;br&gt;+ getFechaDevolucionEsperada(): LocalDate&lt;br&gt;+ setFechaDevolucionEsperada(fechaDevolucionEsperada: LocalDate): void&lt;br&gt;+ getFechaDevolucionReal(): LocalDate&lt;br&gt;+ setFechaDevolucionReal(fechaDevolucionReal: LocalDate): void&lt;br&gt;+ getEstado(): EstadoPrestamo&lt;br&gt;+ setEstado(estado: EstadoPrestamo): void&lt;br&gt;+ toString(): String" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Prestamo">
+          <mxGeometry x="0" y="231" width="790" height="457" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="370.0" y="1930.0" width="450" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo-header" value="«enumeration»&lt;br&gt;EstadoPrestamo" style="rounded=0;html=1;fillColor=#dbeafe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EstadoPrestamo">
+          <mxGeometry x="0" y="0" width="450" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo-section-0" value="ACTIVO&lt;br&gt;DEVUELTO" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EstadoPrestamo">
+          <mxGeometry x="0" y="72" width="450" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="prestamo-solicitante" value="" source="Prestamo" target="Solicitante" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0;exitY=0.5;entryX=0;entryY=0.5;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40.0" y="1474.0" />
+              <mxPoint x="40.0" y="432.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-solicitante-source" value="0..*" vertex="1" connectable="0" parent="prestamo-solicitante" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;">
+          <mxGeometry x="-0.93" y="-18" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-solicitante-target" value="1" vertex="1" connectable="0" parent="prestamo-solicitante" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;">
+          <mxGeometry x="0.93" y="-18" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo" value="" source="Prestamo" target="Equipo" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1;exitY=0.5;entryX=1;entryY=0.5;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000.0" y="1474.0" />
+              <mxPoint x="1000.0" y="409.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo-source" value="0..*" vertex="1" connectable="0" parent="prestamo-equipo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;">
+          <mxGeometry x="-0.93" y="-18" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prestamo-equipo-target" value="1" vertex="1" connectable="0" parent="prestamo-equipo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=17;fontStyle=1;labelBackgroundColor=#ffffff;">
+          <mxGeometry x="0.93" y="-18" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-enum" value="" source="Solicitante" target="TipoSolicitante" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-enum" value="" source="Equipo" target="EstadoEquipo" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-enum" value="" source="Prestamo" target="EstadoPrestamo" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-title" value="Modelo — vista de detalle" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=26;fontStyle=1;fontColor=#334155;">
+          <mxGeometry x="40" y="15" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-note" value="Las conexiones hacia otras secciones se muestran en la vista completa." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=0;fontColor=#334155;">
+          <mxGeometry x="40" y="55" width="1000" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uml-detail-3" name="03 — Capas">
+    <mxGraphModel dx="2500" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2300" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pkg-controller" value="" style="rounded=1;arcSize=2;fillColor=#f0fdfa;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="100.0" width="2400" height="445" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-controller-title" value="«package» cr.ac.una.controller" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="112.0" width="2360" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-service" value="" style="rounded=1;arcSize=2;fillColor=#f0fdf4;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="600.0" width="2400" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-service-title" value="«package» cr.ac.una.service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="612.0" width="2360" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository" value="" style="rounded=1;arcSize=2;fillColor=#faf5ff;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="1180.0" width="2400" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository-title" value="«package» cr.ac.una.repository" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="1192.0" width="2360" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="185.0" width="740" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-header" value="SolicitanteController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="SolicitanteController">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-section-0" value="- solicitanteService: SolicitanteService {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteController">
+          <mxGeometry x="0" y="50" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteController-section-1" value="+ SolicitanteController(solicitanteService: SolicitanteService)&lt;br&gt;+ registrar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteController">
+          <mxGeometry x="0" y="93" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="685.0" width="740" height="274" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-header" value="SolicitanteService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="SolicitanteService">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-section-0" value="- solicitanteRepository: SolicitanteRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteService">
+          <mxGeometry x="0" y="50" width="740" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteService-section-1" value="+ SolicitanteService(solicitanteRepository: SolicitanteRepository,&lt;br&gt;prestamoRepository: PrestamoRepository)&lt;br&gt;+ registrar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteService">
+          <mxGeometry x="0" y="116" width="740" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="1280.0" width="740" height="227" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-header" value="«interface»&lt;br&gt;SolicitanteRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="SolicitanteRepository">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepository">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepository-section-1" value="+ insertar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepository">
+          <mxGeometry x="0" y="115" width="740" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="1820.0" width="740" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;SolicitanteRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-1" value="+ insertar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="870.0" y="185.0" width="740" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-header" value="EquipoController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoController">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-section-0" value="- equipoService: EquipoService {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoController">
+          <mxGeometry x="0" y="50" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoController-section-1" value="+ EquipoController(equipoService: EquipoService)&lt;br&gt;+ registrar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoController">
+          <mxGeometry x="0" y="93" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="870.0" y="685.0" width="740" height="274" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-header" value="EquipoService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoService">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-section-0" value="- equipoRepository: EquipoRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoService">
+          <mxGeometry x="0" y="50" width="740" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoService-section-1" value="+ EquipoService(equipoRepository: EquipoRepository, prestamoRepository:&lt;br&gt;  PrestamoRepository)&lt;br&gt;+ registrar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoService">
+          <mxGeometry x="0" y="116" width="740" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="870.0" y="1280.0" width="740" height="227" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-header" value="«interface»&lt;br&gt;EquipoRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoRepository">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepository">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepository-section-1" value="+ insertar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepository">
+          <mxGeometry x="0" y="115" width="740" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="870.0" y="1820.0" width="740" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;EquipoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-1" value="+ insertar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="1670.0" y="185.0" width="740" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-header" value="PrestamoController" style="rounded=0;html=1;fillColor=#ccfbf1;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="PrestamoController">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-section-0" value="- prestamoService: PrestamoService {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoController">
+          <mxGeometry x="0" y="50" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoController-section-1" value="+ PrestamoController(prestamoService: PrestamoService)&lt;br&gt;+ registrarPrestamo(identificacion: String, codigoEquipo: String,&lt;br&gt;fechaDevolucionEsperada: LocalDate): Prestamo&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ registrarDevolucion(idPrestamo: Integer): Prestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoController">
+          <mxGeometry x="0" y="93" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="1670.0" y="685.0" width="740" height="297" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-header" value="PrestamoService" style="rounded=0;html=1;fillColor=#dcfce7;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="PrestamoService">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-section-0" value="- solicitanteRepository: SolicitanteRepository {readOnly}&lt;br&gt;- equipoRepository: EquipoRepository {readOnly}&lt;br&gt;- prestamoRepository: PrestamoRepository {readOnly}" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoService">
+          <mxGeometry x="0" y="50" width="740" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoService-section-1" value="+ PrestamoService(solicitanteRepository: SolicitanteRepository,&lt;br&gt;equipoRepository: EquipoRepository, prestamoRepository: PrestamoRepository)&lt;br&gt;+ registrarPrestamo(identificacion: String, codigoEquipo: String,&lt;br&gt;fechaDevolucionEsperada: LocalDate): Prestamo&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ registrarDevolucion(idPrestamo: Integer): Prestamo" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoService">
+          <mxGeometry x="0" y="139" width="740" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="1670.0" y="1280.0" width="740" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-header" value="«interface»&lt;br&gt;PrestamoRepository" style="rounded=0;html=1;fillColor=#ede9fe;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="PrestamoRepository">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepository">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepository-section-1" value="+ insertarConEstadoEquipo(prestamo: Prestamo): Prestamo&lt;br&gt;+ buscarPorId(id: Integer): Optional&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ contarActivosPorSolicitante(identificacion: String): int&lt;br&gt;+ existeActivoPorEquipo(codigo: String): boolean&lt;br&gt;+ actualizarConEstadoEquipo(prestamo: Prestamo): void" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepository">
+          <mxGeometry x="0" y="115" width="740" height="181" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1670.0" y="1820.0" width="740" height="319" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;PrestamoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-1" value="+ insertarConEstadoEquipo(prestamo: Prestamo): Prestamo&lt;br&gt;+ buscarPorId(id: Integer): Optional&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ contarActivosPorSolicitante(identificacion: String): int&lt;br&gt;+ existeActivoPorEquipo(codigo: String): boolean&lt;br&gt;+ actualizarConEstadoEquipo(prestamo: Prestamo): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="204" as="geometry" />
+        </mxCell>
+        <mxCell id="jdbc-note" value="Clases JDBC aún no creadas.&lt;br&gt;Sus operaciones implementarán&lt;br&gt;los contratos mostrados arriba." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="80.0" y="2110.0" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-controller-service" value="" source="SolicitanteController" target="SolicitanteService" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-jdbc-interface" value="" source="SolicitanteRepositoryJdbc" target="SolicitanteRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-controller-service" value="" source="EquipoController" target="EquipoService" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipo-jdbc-interface" value="" source="EquipoRepositoryJdbc" target="EquipoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-controller-service" value="" source="PrestamoController" target="PrestamoService" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo-jdbc-interface" value="" source="PrestamoRepositoryJdbc" target="PrestamoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;dashed=1;endArrow=block;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Solicitante-service-repo" value="solicitanteRepository" source="SolicitanteService" target="SolicitanteRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="125.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-service-repo" value="equipoRepository" source="EquipoService" target="EquipoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.3918918918918919;exitY=1;entryX=0.3918918918918919;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="125.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-service-repo" value="prestamoRepository" source="PrestamoService" target="PrestamoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.8783783783783784;exitY=1;entryX=0.8783783783783784;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="114.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-uses-Prestamo-repository" value="prestamoRepository" source="SolicitanteService" target="PrestamoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7027027027027027;exitY=1;entryX=0.44594594594594594;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590.0" y="1030.0" />
+              <mxPoint x="2000.0" y="1030.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-uses-Prestamo-repository" value="prestamoRepository" source="EquipoService" target="PrestamoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7027027027027027;exitY=1;entryX=0.7162162162162162;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390.0" y="1070.0" />
+              <mxPoint x="2200.0" y="1070.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-uses-Solicitante-repository" value="solicitanteRepository" source="PrestamoService" target="SolicitanteRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.12162162162162163;exitY=1;entryX=0.7567567567567568;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1760.0" y="1110.0" />
+              <mxPoint x="630.0" y="1110.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-uses-Equipo-repository" value="equipoRepository" source="PrestamoService" target="EquipoRepository" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.36486486486486486;exitY=1;entryX=0.7702702702702703;entryY=0;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1940.0" y="1150.0" />
+              <mxPoint x="1440.0" y="1150.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="detail-title" value="Capas — vista de detalle" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=26;fontStyle=1;fontColor=#334155;">
+          <mxGeometry x="40" y="15" width="2420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-note" value="Las conexiones hacia otras secciones se muestran en la vista completa." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=0;fontColor=#334155;">
+          <mxGeometry x="40" y="55" width="2420" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uml-detail-4" name="04 — Infraestructura">
+    <mxGraphModel dx="2500" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1600" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pkg-repository" value="" style="rounded=1;arcSize=2;fillColor=#faf5ff;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="80.0" width="2400" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-repository-title" value="«package» cr.ac.una.repository" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="92.0" width="2360" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-app" value="" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="820.0" width="1410" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-app-title" value="«package» cr.ac.una.app" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="832.0" width="1370" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-config" value="" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="1510.0" y="820.0" width="930" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-config-title" value="«package» cr.ac.una.config" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1530.0" y="832.0" width="890" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="external-database" value="" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="1510.0" y="1340.0" width="930" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="external-database-title" value="«sistema externo» MySQL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1530.0" y="1352.0" width="890" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="160.0" width="740" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;SolicitanteRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="SolicitanteRepositoryJdbc-section-1" value="+ insertar(solicitante: Solicitante): void&lt;br&gt;+ buscarPorId(identificacion: String): Optional&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Solicitante&amp;gt;&lt;br&gt;+ actualizar(solicitante: Solicitante): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="SolicitanteRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="870.0" y="160.0" width="740" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;EquipoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoRepositoryJdbc-section-1" value="+ insertar(equipo: Equipo): void&lt;br&gt;+ buscarPorId(codigo: String): Optional&amp;lt;Equipo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ actualizar(equipo: Equipo): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#c97716;strokeWidth=1.5;container=1;collapsible=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1670.0" y="160.0" width="740" height="319" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-header" value="«prevista — Etapa 2»&lt;br&gt;PrestamoRepositoryJdbc" style="rounded=0;html=1;fillColor=#fff7ed;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="0" width="740" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-0" value="Atributos por definir en la Etapa 2" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="72" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositoryJdbc-section-1" value="+ insertarConEstadoEquipo(prestamo: Prestamo): Prestamo&lt;br&gt;+ buscarPorId(id: Integer): Optional&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ listarActivosPorSolicitante(identificacion: String): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+ contarActivosPorSolicitante(identificacion: String): int&lt;br&gt;+ existeActivoPorEquipo(codigo: String): boolean&lt;br&gt;+ actualizarConEstadoEquipo(prestamo: Prestamo): void&lt;br&gt;Implementa el contrato de su interfaz." style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="PrestamoRepositoryJdbc">
+          <mxGeometry x="0" y="115" width="740" height="204" as="geometry" />
+        </mxCell>
+        <mxCell id="jdbc-note" value="Clases JDBC aún no creadas.&lt;br&gt;Sus operaciones implementarán&lt;br&gt;los contratos mostrados arriba." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="80.0" y="450.0" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="App" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="70.0" y="900.0" width="520" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="App-header" value="App" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="App">
+          <mxGeometry x="0" y="0" width="520" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="App-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="App">
+          <mxGeometry x="0" y="50" width="520" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="App-section-1" value="&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;&lt;br&gt;&lt;u&gt;- probarConexion(): void&lt;/u&gt;" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="App">
+          <mxGeometry x="0" y="93" width="520" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="670.0" y="900.0" width="740" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-header" value="Consola" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="Consola">
+          <mxGeometry x="0" y="0" width="740" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-section-0" value="&lt;u&gt;- ENTRADA: Scanner {readOnly}&lt;/u&gt;" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Consola">
+          <mxGeometry x="0" y="50" width="740" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Consola-section-1" value="- Consola()&lt;br&gt;&lt;u&gt;+ leerTexto(mensaje: String): String&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ leerEntero(mensaje: String): int&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ titulo(texto: String): void&lt;/u&gt;" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="Consola">
+          <mxGeometry x="0" y="93" width="740" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="1550.0" y="900.0" width="850" height="251" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-header" value="ConexionBD" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="ConexionBD">
+          <mxGeometry x="0" y="0" width="850" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-section-0" value="&lt;u&gt;- ARCHIVO: String {readOnly}&lt;/u&gt;&lt;br&gt;&lt;u&gt;- url: String&lt;/u&gt;&lt;br&gt;&lt;u&gt;- usuario: String&lt;/u&gt;&lt;br&gt;&lt;u&gt;- clave: String&lt;/u&gt;" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="ConexionBD">
+          <mxGeometry x="0" y="50" width="850" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD-section-1" value="- ConexionBD()&lt;br&gt;&lt;u&gt;+ obtenerConexion(): Connection {throws SQLException}&lt;/u&gt;&lt;br&gt;&lt;u&gt;- cargarConfiguracion(): void {throws SQLException}&lt;/u&gt;" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="ConexionBD">
+          <mxGeometry x="0" y="162" width="850" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="app-note-1" value="App actual: menú para probar la conexión. En Etapa 2 ensamblará" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="80.0" y="1295.0" width="1330" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="app-note-2" value="los repositorios, servicios y controladores, y mostrará las operaciones." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="80.0" y="1330.0" width="1330" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="MySQL" value="«database»&lt;br&gt;MySQL: examen_progra3" style="shape=cylinder;html=1;whiteSpace=wrap;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e2e8f0;strokeColor=#64748b;fontFamily=Arial;fontSize=21;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1750.0" y="1400.0" width="450" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="app-consola" value="" source="App" target="Consola" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="app-config" value="" source="App" target="ConexionBD" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330.0" y="1250.0" />
+              <mxPoint x="1480.0" y="1250.0" />
+              <mxPoint x="1480.0" y="1025.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Solicitante-jdbc-config" value="«use»" source="SolicitanteRepositoryJdbc" target="ConexionBD" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.4235294117647059;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440.0" y="660.0" />
+              <mxPoint x="1910.0" y="660.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Equipo-jdbc-config" value="«use»" source="EquipoRepositoryJdbc" target="ConexionBD" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240.0" y="695.0" />
+              <mxPoint x="1975.0" y="695.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Prestamo-jdbc-config" value="«use»" source="PrestamoRepositoryJdbc" target="ConexionBD" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#b45309;fontColor=#b45309;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.8;entryY=0;dashed=1;endArrow=open;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2040.0" y="730.0" />
+              <mxPoint x="2230.0" y="730.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conexion-mysql" value="" source="ConexionBD" target="MySQL" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;endArrow=open;endFill=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-title" value="Infraestructura — vista de detalle" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=26;fontStyle=1;fontColor=#334155;">
+          <mxGeometry x="40" y="15" width="2420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-note" value="Las conexiones hacia otras secciones se muestran en la vista completa." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=0;fontColor=#334155;">
+          <mxGeometry x="40" y="55" width="2420" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uml-detail-5" name="05 — Excepciones">
+    <mxGraphModel dx="1080" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="1180" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="external-java" value="" style="rounded=1;arcSize=2;fillColor=#f8fafc;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="20.0" y="80.0" width="1000" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="external-java-title" value="«biblioteca externa» java.lang" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="92.0" width="960" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-exception" value="" style="rounded=1;arcSize=2;fillColor=#fff1f2;strokeColor=#cbd5e1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="20.0" y="290.0" width="1000" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-exception-title" value="«package» cr.ac.una.exception" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontColor=#334155;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40.0" y="302.0" width="960" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="290.0" y="140.0" width="470" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException-header" value="«biblioteca Java»&lt;br&gt;java.lang.RuntimeException" style="rounded=0;html=1;fillColor=#e2e8f0;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="RuntimeException">
+          <mxGeometry x="0" y="0" width="470" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="RuntimeException-section-0" value="Miembros de la biblioteca omitidos" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="RuntimeException">
+          <mxGeometry x="0" y="72" width="470" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="420.0" width="430" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-header" value="ValidacionException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="ValidacionException">
+          <mxGeometry x="0" y="0" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="ValidacionException">
+          <mxGeometry x="0" y="50" width="430" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-section-1" value="+ ValidacionException(mensaje: String)" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="ValidacionException">
+          <mxGeometry x="0" y="93" width="430" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="530.0" y="420.0" width="450" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-header" value="EquipoNoDisponibleException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="EquipoNoDisponibleException">
+          <mxGeometry x="0" y="0" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoNoDisponibleException">
+          <mxGeometry x="0" y="50" width="450" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-section-1" value="+ EquipoNoDisponibleException(mensaje: String)" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="EquipoNoDisponibleException">
+          <mxGeometry x="0" y="93" width="450" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="740.0" width="430" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-header" value="LimitePrestamosException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="LimitePrestamosException">
+          <mxGeometry x="0" y="0" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="LimitePrestamosException">
+          <mxGeometry x="0" y="50" width="430" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LimitePrestamosException-section-1" value="+ LimitePrestamosException(mensaje: String)" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="LimitePrestamosException">
+          <mxGeometry x="0" y="93" width="430" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#64748b;strokeWidth=1.5;container=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="530.0" y="740.0" width="450" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-header" value="DatosException" style="rounded=0;html=1;fillColor=#ffe4e6;strokeColor=#64748b;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=20;fontStyle=1;" vertex="1" parent="DatosException">
+          <mxGeometry x="0" y="0" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-section-0" value="Sin atributos declarados" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="DatosException">
+          <mxGeometry x="0" y="50" width="450" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="DatosException-section-1" value="+ DatosException(mensaje: String)&lt;br&gt;+ DatosException(mensaje: String, causa:&lt;br&gt;  Throwable)" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;align=left;verticalAlign=top;spacingLeft=12;spacingTop=10;fontFamily=Consolas;fontSize=16;whiteSpace=wrap;" vertex="1" parent="DatosException">
+          <mxGeometry x="0" y="93" width="450" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptions-note-1" value="Uso previsto en Service: validación, equipo no disponible" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="1000.0" width="920" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptions-note-2" value="y límite de préstamos. DatosException conserva la causa de JDBC." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="60.0" y="1035.0" width="920" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ValidacionException-extends" value="" source="ValidacionException" target="RuntimeException" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.22093023255813954;exitY=0.0;entryX=0.44680851063829785;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="155.0" y="360.0" />
+              <mxPoint x="500.0" y="360.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EquipoNoDisponibleException-extends" value="" source="EquipoNoDisponibleException" target="RuntimeException" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.7222222222222222;exitY=0.0;entryX=0.8829787234042553;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="855.0" y="380.0" />
+              <mxPoint x="705.0" y="380.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LimitePrestamosException-extends" value="" source="LimitePrestamosException" target="RuntimeException" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=0.0;exitY=0.5;entryX=0.3404255319148936;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40.0" y="808.0" />
+              <mxPoint x="40.0" y="340.0" />
+              <mxPoint x="450.0" y="340.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DatosException-extends" value="" source="DatosException" target="RuntimeException" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=18;strokeWidth=1.7;fontFamily=Arial;fontSize=16;strokeColor=#475569;fontColor=#475569;labelBackgroundColor=#ffffff;jumpStyle=arc;jumpSize=14;exitX=1.0;exitY=0.5;entryX=0.6702127659574468;entryY=1;endArrow=block;endFill=0;noEdgeStyle=1;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;jumpSize=14;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000.0" y="831.0" />
+              <mxPoint x="1000.0" y="400.0" />
+              <mxPoint x="605.0" y="400.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="detail-title" value="Excepciones — vista de detalle" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=26;fontStyle=1;fontColor=#334155;">
+          <mxGeometry x="40" y="15" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-note" value="Las conexiones hacia otras secciones se muestran en la vista completa." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=0;fontColor=#334155;">
+          <mxGeometry x="40" y="55" width="1000" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

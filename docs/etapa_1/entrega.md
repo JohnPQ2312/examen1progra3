@@ -1,7 +1,5 @@
 # Etapa 1 — Análisis, diseño y arquitectura
 
-> Complete todas las secciones. Elimine las indicaciones entre `< >` al terminar.
-
 ## 9.1 Identificación
 
 ```text
@@ -24,7 +22,7 @@ La persona encargada del área de préstamos de la unidad académica.
 
 **Principales operaciones:**
 
-- Registrar, consultar, listar y actualizar solicitantes y equipos; registrar préstamos; consultar préstamos activos de una persona; registrar devoluciones si las incorporamos al alcance.
+- Registrar, consultar, listar y actualizar solicitantes y equipos; registrar préstamos; consultar préstamos activos de una persona; registrar devoluciones.
 
 ## 9.3 Requerimientos funcionales
 
@@ -193,17 +191,17 @@ Los controladores expondrán las mismas operaciones de su servicio y delegarán 
 
 ## Código de la Etapa 1
 
-- [ ] Clases del modelo (atributos privados, constructores, getters/setters, `toString()`).
-- [ ] Enumeraciones.
-- [ ] Interfaces `Repository`/`DAO`.
-- [ ] Estructura de `Service` y `Controller`.
-- [ ] Excepciones personalizadas.
-- [ ] El proyecto compila.
+- [X] Clases del modelo (atributos privados, constructores, getters/setters, `toString()`).
+- [X] Enumeraciones.
+- [X] Interfaces `Repository`/`DAO`.
+- [X] Estructura de `Service` y `Controller`.
+- [X] Excepciones personalizadas.
+- [X] El proyecto compila.
 
 ## Distribución del trabajo
 
 | Integrante | Aportes principales |
 |---|---|
-| John Perez Quesada | Preparación del repositorio, elaboración del análisis y diseño con asistencia de IA, incorporación de entidades, enumeraciones, interfaces y excepciones, y comprobación de compilación. |
+| John Perez Quesada | Preparación del repositorio y desarrollo de la Etapa 1 con asistencia de IA: análisis del problema, requerimientos y reglas de negocio; definición de la arquitectura por capas; incorporación de entidades, enumeraciones, interfaces de repositorio, estructura de servicios y controladores, y excepciones; elaboración del script SQL preliminar y de los diagramas UML y relacional; exportación de los diagramas y comprobación de compilación. |
 | Joe Sandoval Diaz | Sin aportes en la Etapa 1 al momento de este commit. |
 | Joshua Barrantes Granados | Sin aportes en la Etapa 1 al momento de este commit. |
