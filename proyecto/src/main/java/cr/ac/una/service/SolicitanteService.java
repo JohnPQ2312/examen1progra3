@@ -29,7 +29,7 @@ public class SolicitanteService {
         validar(solicitante);
         if (solicitanteRepository.buscarPorId(solicitante.getIdentificacion()).isPresent()) {
             throw new ValidacionException(
-                    "Ya existe un solicitante con identificación "
+                    "Ya existe un solicitante con identificacion "
                     + solicitante.getIdentificacion() + ".");
         }
         solicitanteRepository.insertar(solicitante);
@@ -37,7 +37,7 @@ public class SolicitanteService {
 
     public Optional<Solicitante> buscarPorId(String identificacion) {
         if (identificacion == null || identificacion.isBlank()) {
-            throw new ValidacionException("La identificación es obligatoria.");
+            throw new ValidacionException("La identificacion es obligatoria.");
         }
         return solicitanteRepository.buscarPorId(identificacion.trim());
     }
@@ -50,7 +50,7 @@ public class SolicitanteService {
         validar(solicitante);
         if (solicitanteRepository.buscarPorId(solicitante.getIdentificacion()).isEmpty()) {
             throw new ValidacionException(
-                    "No existe un solicitante con identificación "
+                    "No existe un solicitante con identificacion "
                     + solicitante.getIdentificacion() + ".");
         }
  
@@ -60,7 +60,7 @@ public class SolicitanteService {
             if (activos > LIMITE_ESTUDIANTE) {
                 throw new ValidacionException(
                         "No se puede cambiar a ESTUDIANTE: tiene " + activos
-                        + " préstamos activos y el máximo para estudiante es "
+                        + " prestamos activos y el maximo para estudiante es "
                         + LIMITE_ESTUDIANTE + ".");
             }
         }
