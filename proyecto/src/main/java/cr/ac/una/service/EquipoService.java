@@ -1,6 +1,8 @@
 package cr.ac.una.service;
 
+import cr.ac.una.exception.ValidacionException;
 import cr.ac.una.model.Equipo;
+import cr.ac.una.model.EstadoEquipo;
 import cr.ac.una.repository.EquipoRepository;
 import cr.ac.una.repository.PrestamoRepository;
 import java.util.List;
@@ -19,22 +21,67 @@ public class EquipoService {
     }
 
     public void registrar(Equipo equipo) {
-        throw new UnsupportedOperationException(
-                "Registro de equipos pendiente para la Etapa 2.");
+        validar(equipo);
+        if (equipo.getEstado() == null) {
+            equipo.setEstado(EstadoEquipo.DISPONIBLE);
+        }
+ 
+        if (equipo.getEstado() == EstadoEquipo.PRESTADO) {
+            throw new ValidacionException(
+                    "Un equipo nuevo no puede registrarse como PRESTADO.");
+        }
+        if (equipoRepository.buscarPorId(equipo.getCodigo()).isPresent()) {
+            throw new ValidacionException(
+                    "Ya existe un equipo con codigo " + equipo.getCodigo() + ".");
+        }
+        equipoRepository.insertar(equipo);
     }
 
     public Optional<Equipo> buscarPorId(String codigo) {
-        throw new UnsupportedOperationException(
-                "Consulta de equipos pendiente para la Etapa 2.");
+        if (codigo == null || codigo.isBlank()) {
+            throw new ValidacionException("El codigo del equipo es obligatorio.");
+        }
+        return equipoRepository.buscarPorId(codigo.trim());
     }
 
     public List<Equipo> listar() {
-        throw new UnsupportedOperationException(
-                "Listado de equipos pendiente para la Etapa 2.");
+        return equipoRepository.listar();
     }
 
     public void actualizar(Equipo equipo) {
-        throw new UnsupportedOperationException(
-                "Actualización de equipos pendiente para la Etapa 2.");
+        validar(equipo);
+        if (equipo.getEstado() == null) {
+            throw new ValidacionException("El estado del equipo es obligatorio.");
+        }
+        if (equipoRepository.buscarPorId(equipo.getCodigo()).isEmpty()) {
+            throw new ValidacionException(
+                    "No existe un equipo con codigo " + equipo.getCodigo() + ".");
+        }
+        boolean tienePrestamoActivo = prestamoRepository.existeActivoPorEquipo(equipo.getCodigo());
+        if (tienePrestamoActivo && equipo.getEstado() != EstadoEquipo.PRESTADO) {
+            throw new ValidacionException(
+                    "El equipo " + equipo.getCodigo()
+                    + " tiene un prestamo activo; registre primero la devolucion.");
+        }
+        if (!tienePrestamoActivo && equipo.getEstado() == EstadoEquipo.PRESTADO) {
+            throw new ValidacionException(
+                    "Un equipo solo pasa a prestado al registrar un prestamo.");
+        }
+        equipoRepository.actualizar(equipo);
+    }
+
+    private void validar(Equipo e) {
+        if (e == null) {
+            throw new ValidacionException("Los datos del equipo son obligatorios.");
+        }
+        if (e.getCodigo() == null || e.getCodigo().isBlank()) {
+            throw new ValidacionException("El codigo del equipo es obligatorio.");
+        }
+        if (e.getDescripcion() == null || e.getDescripcion().isBlank()) {
+            throw new ValidacionException("La descripcion es obligatoria.");
+        }
+        if (e.getTipo() == null || e.getTipo().isBlank()) {
+            throw new ValidacionException("El tipo de equipo es obligatorio.");
+        }
     }
 }
