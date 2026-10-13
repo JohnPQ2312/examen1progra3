@@ -124,7 +124,6 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                          Statement.RETURN_GENERATED_KEYS);
                  PreparedStatement psEquipo = con.prepareStatement(sqlEquipo)) {
 
-                //Insertar el préstamo
                 psPrestamo.setString(1, prestamo.getSolicitante().getIdentificacion());
                 psPrestamo.setString(2, prestamo.getEquipo().getCodigo());
                 psPrestamo.setDate(3, Date.valueOf(prestamo.getFechaPrestamo()));
@@ -139,7 +138,6 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                     }
                 }
 
-                //Cambiar el estado del equipo
                 psEquipo.setString(1, prestamo.getEquipo().getEstado().name());
                 psEquipo.setString(2, prestamo.getEquipo().getCodigo());
                 psEquipo.executeUpdate();
@@ -165,7 +163,6 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
             try (PreparedStatement psPrestamo = con.prepareStatement(sqlPrestamo);
                  PreparedStatement psEquipo = con.prepareStatement(sqlEquipo)) {
 
-                //Actualizar el préstamo
                 if (prestamo.getFechaDevolucionReal() == null) {
                     psPrestamo.setDate(1, null);
                 } else {
@@ -175,7 +172,6 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 psPrestamo.setInt(3, prestamo.getId());
                 psPrestamo.executeUpdate();
 
-                //Cambiar el estado del equipo
                 psEquipo.setString(1, prestamo.getEquipo().getEstado().name());
                 psEquipo.setString(2, prestamo.getEquipo().getCodigo());
                 psEquipo.executeUpdate();
