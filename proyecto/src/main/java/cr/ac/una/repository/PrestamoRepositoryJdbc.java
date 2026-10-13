@@ -18,13 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Implementación JDBC de PrestamoRepository.
- * Solo contiene SQL y conversión de filas a objetos; las reglas están en PrestamoService.
- */
 public class PrestamoRepositoryJdbc implements PrestamoRepository {
 
-    /** SELECT con JOIN: trae el préstamo junto con los datos del solicitante y del equipo. */
+ 
     private static final String SELECT_BASE =
             "SELECT p.id, p.fecha_prestamo, p.fecha_devolucion_esperada, "
             + "p.fecha_devolucion_real, p.estado AS estado_prestamo, "
@@ -34,7 +30,6 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
             + "JOIN solicitante s ON s.identificacion = p.solicitante_id "
             + "JOIN equipo e ON e.codigo = p.equipo_codigo ";
 
-    // ======================== Consultas ========================
 
     @Override
     public Optional<Prestamo> buscarPorId(Integer id) {
@@ -46,7 +41,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 return rs.next() ? Optional.of(mapear(rs)) : Optional.empty();
             }
         } catch (SQLException e) {
-            throw new DatosException("Error al buscar el préstamo " + id, e);
+            throw new DatosException("Error al buscar el prestamo " + id, e);
         }
     }
 
@@ -62,11 +57,10 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
             }
             return lista;
         } catch (SQLException e) {
-            throw new DatosException("Error al listar los préstamos", e);
+            throw new DatosException("Error al listar los prestamos", e);
         }
     }
-
-    /** Consulta con JOIN y filtro exigida por el README (sección 7, punto 5). */
+    
     @Override
     public List<Prestamo> listarActivosPorSolicitante(String identificacion) {
         String sql = SELECT_BASE
@@ -83,7 +77,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
             }
             return lista;
         } catch (SQLException e) {
-            throw new DatosException("Error al listar los préstamos activos de " + identificacion, e);
+            throw new DatosException("Error al listar los prestamos activos de " + identificacion, e);
         }
     }
 
@@ -98,7 +92,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 return rs.getInt(1);
             }
         } catch (SQLException e) {
-            throw new DatosException("Error al contar los préstamos activos de " + identificacion, e);
+            throw new DatosException("Error al contar los prestamos activos de " + identificacion, e);
         }
     }
 
@@ -113,16 +107,10 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 return rs.getInt(1) > 0;
             }
         } catch (SQLException e) {
-            throw new DatosException("Error al verificar préstamos activos del equipo " + codigo, e);
+            throw new DatosException("Error al verificar prestamos activos del equipo " + codigo, e);
         }
     }
 
-    // ======================== Transacciones ========================
-
-    /**
-     * Inserta el préstamo y actualiza el estado del equipo en una sola transacción (RN-07).
-     * Si cualquiera de las dos escrituras falla, se revierten ambas.
-     */
     @Override
     public Prestamo insertarConEstadoEquipo(Prestamo prestamo) {
         String sqlPrestamo = "INSERT INTO prestamo (solicitante_id, equipo_codigo, fecha_prestamo, "
@@ -136,7 +124,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                          Statement.RETURN_GENERATED_KEYS);
                  PreparedStatement psEquipo = con.prepareStatement(sqlEquipo)) {
 
-                // 1. Insertar el préstamo
+                //Insertar el préstamo
                 psPrestamo.setString(1, prestamo.getSolicitante().getIdentificacion());
                 psPrestamo.setString(2, prestamo.getEquipo().getCodigo());
                 psPrestamo.setDate(3, Date.valueOf(prestamo.getFechaPrestamo()));
@@ -151,7 +139,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                     }
                 }
 
-                // 2. Cambiar el estado del equipo
+                //Cambiar el estado del equipo
                 psEquipo.setString(1, prestamo.getEquipo().getEstado().name());
                 psEquipo.setString(2, prestamo.getEquipo().getCodigo());
                 psEquipo.executeUpdate();
@@ -163,13 +151,10 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 throw e;
             }
         } catch (SQLException e) {
-            throw new DatosException("Error al registrar el préstamo; no se guardó ningún cambio", e);
+            throw new DatosException("Error al registrar el prestamo; no se guardo ningun cambio", e);
         }
     }
 
-    /**
-     * Guarda la devolución del préstamo y el nuevo estado del equipo en una sola transacción (RN-03).
-     */
     @Override
     public void actualizarConEstadoEquipo(Prestamo prestamo) {
         String sqlPrestamo = "UPDATE prestamo SET fecha_devolucion_real = ?, estado = ? WHERE id = ?";
@@ -180,7 +165,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
             try (PreparedStatement psPrestamo = con.prepareStatement(sqlPrestamo);
                  PreparedStatement psEquipo = con.prepareStatement(sqlEquipo)) {
 
-                // 1. Actualizar el préstamo
+                //Actualizar el préstamo
                 if (prestamo.getFechaDevolucionReal() == null) {
                     psPrestamo.setDate(1, null);
                 } else {
@@ -190,7 +175,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 psPrestamo.setInt(3, prestamo.getId());
                 psPrestamo.executeUpdate();
 
-                // 2. Cambiar el estado del equipo
+                //Cambiar el estado del equipo
                 psEquipo.setString(1, prestamo.getEquipo().getEstado().name());
                 psEquipo.setString(2, prestamo.getEquipo().getCodigo());
                 psEquipo.executeUpdate();
@@ -201,13 +186,10 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 throw e;
             }
         } catch (SQLException e) {
-            throw new DatosException("Error al registrar la devolución; no se guardó ningún cambio", e);
+            throw new DatosException("Error al registrar la devolucion; no se guardo ningun cambio", e);
         }
     }
 
-    // ======================== Mapeo ========================
-
-    /** Convierte la fila actual (préstamo + solicitante + equipo) en un objeto Prestamo. */
     private Prestamo mapear(ResultSet rs) throws SQLException {
         Solicitante solicitante = new Solicitante(
                 rs.getString("identificacion"),

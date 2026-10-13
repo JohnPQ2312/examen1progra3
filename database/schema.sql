@@ -61,7 +61,7 @@ CREATE TABLE prestamo (
         )
 ) ENGINE = InnoDB;
 
---Datos de prueba
+-- Datos de prueba
 INSERT INTO solicitante (identificacion, nombre, correo, tipo) VALUES
 ('1-1111-1111', 'Ana Mora Solís',       'ana.mora@est.una.ac.cr',     'ESTUDIANTE'),
 ('2-2222-2222', 'Carlos Vega Rojas',    'carlos.vega@est.una.ac.cr',  'ESTUDIANTE'),
@@ -79,8 +79,8 @@ INSERT INTO equipo (codigo, descripcion, tipo, estado) VALUES
 ('EQ-07', 'Parlante JBL Charge 5',      'Audio',     'DISPONIBLE'),
 ('EQ-08', 'Proyector BenQ MS560',       'Proyector', 'DISPONIBLE');
 
---Ana (estudiante) ya tiene 2 préstamos activos: sirve para probar el límite (RN-02).
---Mario tiene un préstamo ya devuelto: sirve para el historial.
+-- Ana (estudiante) ya tiene 2 préstamos activos: sirve para probar el límite (RN-02).
+-- Mario tiene un préstamo ya devuelto: sirve para el historial.
 INSERT INTO prestamo (solicitante_id, equipo_codigo, fecha_prestamo,
                       fecha_devolucion_esperada, fecha_devolucion_real, estado) VALUES
 ('1-1111-1111', 'EQ-05', '2026-10-05', '2026-10-20', NULL,         'ACTIVO'),

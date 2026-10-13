@@ -38,36 +38,31 @@ public class PrestamoService {
             String codigoEquipo,
             LocalDate fechaDevolucionEsperada) {
 
-        //Validar los datos recibidos
         validarTexto(identificacion, "La identificación del solicitante es obligatoria.");
-        validarTexto(codigoEquipo, "El código del equipo es obligatorio.");
+        validarTexto(codigoEquipo, "El codigo del equipo es obligatorio.");
         if (fechaDevolucionEsperada == null) {
             throw new ValidacionException("La fecha esperada de devolución es obligatoria.");
         }
 
-        //La fecha de devolución debe ser posterior a la de hoy
         LocalDate hoy = LocalDate.now();
         if (!fechaDevolucionEsperada.isAfter(hoy)) {
             throw new ValidacionException(
-                    "La fecha esperada de devolución debe ser posterior a hoy (" + hoy + ").");
+                    "La fecha esperada de devolucion debe ser posterior a hoy (" + hoy + ").");
         }
 
-        //Consultar el estado actual, solicitante y equipo deben existir
         Solicitante solicitante = solicitanteRepository.buscarPorId(identificacion)
                 .orElseThrow(() -> new ValidacionException(
-                        "No existe un solicitante con identificación " + identificacion + "."));
+                        "No existe un solicitante con identificacion " + identificacion + "."));
         Equipo equipo = equipoRepository.buscarPorId(codigoEquipo)
                 .orElseThrow(() -> new ValidacionException(
-                        "No existe un equipo con código " + codigoEquipo + "."));
+                        "No existe un equipo con codigo " + codigoEquipo + "."));
 
-        //Solo se presta un equipo disponible
         if (equipo.getEstado() != EstadoEquipo.DISPONIBLE) {
             throw new EquipoNoDisponibleException(
                     "El equipo " + codigoEquipo + " no está disponible (estado: "
                     + equipo.getEstado() + ").");
         }
 
-        //Límite de préstamos activos por tipo de solicitante
         int limite = solicitante.getTipo() == TipoSolicitante.ESTUDIANTE
                 ? LIMITE_ESTUDIANTE
                 : LIMITE_FUNCIONARIO;
@@ -75,11 +70,10 @@ public class PrestamoService {
         if (activos >= limite) {
             throw new LimitePrestamosException(
                     solicitante.getNombre() + " ya tiene " + activos
-                    + " préstamos activos; el máximo para " + solicitante.getTipo()
+                    + " prestamos activos; el maximo para " + solicitante.getTipo()
                     + " es " + limite + ".");
         }
 
-        //Registrar el resultado
         equipo.setEstado(EstadoEquipo.PRESTADO);
         Prestamo prestamo = new Prestamo(
                 null, solicitante, equipo, hoy, fechaDevolucionEsperada,
@@ -88,30 +82,28 @@ public class PrestamoService {
     }
 
     public List<Prestamo> listarActivosPorSolicitante(String identificacion) {
-        validarTexto(identificacion, "La identificación del solicitante es obligatoria.");
+        validarTexto(identificacion, "La identificacion del solicitante es obligatoria.");
         if (solicitanteRepository.buscarPorId(identificacion).isEmpty()) {
             throw new ValidacionException(
-                    "No existe un solicitante con identificación " + identificacion + ".");
+                    "No existe un solicitante con identificacion " + identificacion + ".");
         }
         return prestamoRepository.listarActivosPorSolicitante(identificacion);
     }
 
     public Prestamo registrarDevolucion(Integer idPrestamo) {
         if (idPrestamo == null || idPrestamo <= 0) {
-            throw new ValidacionException("El número de préstamo no es válido.");
+            throw new ValidacionException("El numero de prestamo no es valido.");
         }
 
-        //El préstamo debe existir y estar activo
         Prestamo prestamo = prestamoRepository.buscarPorId(idPrestamo)
                 .orElseThrow(() -> new ValidacionException(
-                        "No existe un préstamo con número " + idPrestamo + "."));
+                        "No existe un prestamo con nemero " + idPrestamo + "."));
         if (prestamo.getEstado() != EstadoPrestamo.ACTIVO) {
             throw new ValidacionException(
-                    "El préstamo " + idPrestamo + " ya fue devuelto el "
+                    "El prestamo " + idPrestamo + " ya fue devuelto el "
                     + prestamo.getFechaDevolucionReal() + ".");
         }
 
-        //Préstamo devuelto con fecha real y equipo disponible, en una transacción
         prestamo.setFechaDevolucionReal(LocalDate.now());
         prestamo.setEstado(EstadoPrestamo.DEVUELTO);
         prestamo.getEquipo().setEstado(EstadoEquipo.DISPONIBLE);
