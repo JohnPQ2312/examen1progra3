@@ -1,7 +1,12 @@
--- Etapa 1: modelo preliminar de préstamos de equipos.
-DROP TABLE IF EXISTS prestamo;
-DROP TABLE IF EXISTS equipo;
-DROP TABLE IF EXISTS solicitante;
+-- Etapa 2: esquema definitivo de préstamos de equipos con datos de prueba.
+-- ADVERTENCIA: este script elimina y recrea examen_progra3 y sus datos.
+DROP DATABASE IF EXISTS examen_progra3;
+
+CREATE DATABASE examen_progra3
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_spanish_ci;
+
+USE examen_progra3;
 
 CREATE TABLE solicitante (
     identificacion VARCHAR(30) PRIMARY KEY,
