@@ -71,7 +71,7 @@ Se exportaron y revisaron el [UML final](../etapa_1/diagramas/uml_final.png) y e
 
 ## Distribución del trabajo
 
-Grupo de tres integrantes autorizado por el profesor. Los aportes de código se contrastaron con el historial del repositorio; las pruebas manuales de renovación, vencidos, regresión y actualizaciones fueron ejecutadas por John.
+Grupo de tres integrantes autorizado por el profesor. Los aportes de código se contrastaron con el historial hasta [02bfa93](https://github.com/JohnPQ2312/examen1progra3/commit/02bfa93bb58a56ff2bb1a27358fa31d2aa4a9bb4); las pruebas manuales de renovación, vencidos, regresión y actualizaciones fueron ejecutadas por John.
 
 | Integrante | Aportes principales |
 |---|---|
