@@ -2,11 +2,13 @@ package cr.ac.una.service;
 
 import cr.ac.una.exception.EquipoNoDisponibleException;
 import cr.ac.una.exception.LimitePrestamosException;
+import cr.ac.una.exception.RenovacionNoPermitidaException;
 import cr.ac.una.exception.ValidacionException;
 import cr.ac.una.model.Equipo;
 import cr.ac.una.model.EstadoEquipo;
 import cr.ac.una.model.EstadoPrestamo;
 import cr.ac.una.model.Prestamo;
+import cr.ac.una.model.PrestamoVencido;
 import cr.ac.una.model.Solicitante;
 import cr.ac.una.model.TipoSolicitante;
 import cr.ac.una.repository.EquipoRepository;
@@ -19,6 +21,8 @@ public class PrestamoService {
 
     private static final int LIMITE_ESTUDIANTE = 2;
     private static final int LIMITE_FUNCIONARIO = 4;
+    private static final int DIAS_RENOVACION_ESTUDIANTE = 3;
+    private static final int DIAS_RENOVACION_FUNCIONARIO = 7;
 
     private final SolicitanteRepository solicitanteRepository;
     private final EquipoRepository equipoRepository;
@@ -111,6 +115,43 @@ public class PrestamoService {
         return prestamo;
     }
 
+     public Prestamo renovarPrestamo(Integer idPrestamo) {
+        if (idPrestamo == null || idPrestamo <= 0) {
+            throw new ValidacionException("El numero de prestamo no es valido.");
+        }
+
+        Prestamo prestamo = prestamoRepository.buscarPorId(idPrestamo)
+                .orElseThrow(() -> new ValidacionException(
+                        "No existe un prestamo con numero " + idPrestamo + "."));
+
+        if (prestamo.getEstado() != EstadoPrestamo.ACTIVO) {
+            throw new RenovacionNoPermitidaException(
+                    "El prestamo " + idPrestamo + " ya fue devuelto; no se puede renovar.");
+        }
+        if (prestamo.getRenovaciones() != 0) {
+            throw new RenovacionNoPermitidaException(
+                    "El prestamo " + idPrestamo + " ya fue renovado una vez; solo se permite una renovacion.");
+        }
+        LocalDate hoy = LocalDate.now();
+        if (prestamo.getFechaDevolucionEsperada().isBefore(hoy)) {
+            throw new RenovacionNoPermitidaException(
+                    "El prestamo " + idPrestamo + " esta vencido desde el "
+                    + prestamo.getFechaDevolucionEsperada() + "; no se puede renovar.");
+        }
+
+        int dias = prestamo.getSolicitante().getTipo() == TipoSolicitante.FUNCIONARIO
+                ? DIAS_RENOVACION_FUNCIONARIO
+                : DIAS_RENOVACION_ESTUDIANTE;
+        prestamo.setFechaDevolucionEsperada(prestamo.getFechaDevolucionEsperada().plusDays(dias));
+        prestamo.setRenovaciones(prestamo.getRenovaciones() + 1);
+
+        prestamoRepository.actualizarRenovacion(prestamo);
+        return prestamo;
+    }
+
+    public List<PrestamoVencido> listarActivosVencidos() {
+        return prestamoRepository.listarActivosVencidos();
+    }
     private void validarTexto(String valor, String mensaje) {
         if (valor == null || valor.isBlank()) {
             throw new ValidacionException(mensaje);
