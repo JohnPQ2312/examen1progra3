@@ -7,6 +7,7 @@ package cr.ac.una.repository;
 import cr.ac.una.model.Prestamo;
 import java.util.List;
 import java.util.Optional;
+import cr.ac.una.model.PrestamoVencido;
 
 /**
  *
@@ -27,4 +28,8 @@ public interface PrestamoRepository {
     boolean existeActivoPorEquipo(String codigo);
 
     void actualizarConEstadoEquipo(Prestamo prestamo);
+    
+    void actualizarRenovacion(Prestamo prestamo);
+
+    List<PrestamoVencido> listarActivosVencidos();
 }

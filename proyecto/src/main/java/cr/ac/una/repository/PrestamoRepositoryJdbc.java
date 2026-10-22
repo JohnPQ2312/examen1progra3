@@ -6,6 +6,7 @@ import cr.ac.una.model.Equipo;
 import cr.ac.una.model.EstadoEquipo;
 import cr.ac.una.model.EstadoPrestamo;
 import cr.ac.una.model.Prestamo;
+import cr.ac.una.model.PrestamoVencido;
 import cr.ac.una.model.Solicitante;
 import cr.ac.una.model.TipoSolicitante;
 import java.sql.Connection;
@@ -209,5 +210,15 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 rs.getDate("fecha_devolucion_esperada").toLocalDate(),
                 real == null ? null : real.toLocalDate(),
                 EstadoPrestamo.valueOf(rs.getString("estado_prestamo")));
+    }
+
+    @Override
+    public void actualizarRenovacion(Prestamo prestamo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public List<PrestamoVencido> listarActivosVencidos() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
