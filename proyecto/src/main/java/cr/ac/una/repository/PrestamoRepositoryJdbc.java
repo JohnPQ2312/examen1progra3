@@ -24,7 +24,7 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
  
     private static final String SELECT_BASE =
             "SELECT p.id, p.fecha_prestamo, p.fecha_devolucion_esperada, "
-            + "p.fecha_devolucion_real, p.estado AS estado_prestamo, "
+            + "p.fecha_devolucion_real, p.estado AS estado_prestamo, p.renovaciones "
             + "s.identificacion, s.nombre, s.correo, s.tipo AS tipo_solicitante, "
             + "e.codigo, e.descripcion, e.tipo AS tipo_equipo, e.estado AS estado_equipo "
             + "FROM prestamo p "
@@ -209,7 +209,8 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
                 rs.getDate("fecha_prestamo").toLocalDate(),
                 rs.getDate("fecha_devolucion_esperada").toLocalDate(),
                 real == null ? null : real.toLocalDate(),
-                EstadoPrestamo.valueOf(rs.getString("estado_prestamo")));
+                EstadoPrestamo.valueOf(rs.getString("estado_prestamo")),
+                rs.getInt("renovaciones"));
     }
 
     @Override
