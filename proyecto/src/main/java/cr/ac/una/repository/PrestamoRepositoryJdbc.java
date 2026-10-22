@@ -15,6 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -215,11 +216,50 @@ public class PrestamoRepositoryJdbc implements PrestamoRepository {
 
     @Override
     public void actualizarRenovacion(Prestamo prestamo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String sql = "UPDATE prestamo SET fecha_devolucion_esperada = ?, renovaciones = ? "
+                + "WHERE id = ? AND estado = 'ACTIVO'";
+        try (Connection con = ConexionBD.obtenerConexion();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+            ps.setDate(1, Date.valueOf(prestamo.getFechaDevolucionEsperada()));
+            ps.setInt(2, prestamo.getRenovaciones());
+            ps.setInt(3, prestamo.getId());
+            int filas = ps.executeUpdate();
+            if (filas != 1) {
+                throw new DatosException("No se pudo renovar el prestamo " + prestamo.getId()
+                        + "; no existe o ya no esta activo.");
+            }
+        } catch (SQLException e) {
+            throw new DatosException("Error al renovar el prestamo " + prestamo.getId(), e);
+        }
     }
 
     @Override
     public List<PrestamoVencido> listarActivosVencidos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String sql = "SELECT s.nombre, e.codigo, "
+                + "DATEDIFF(?, p.fecha_devolucion_esperada) AS dias_atraso "
+                + "FROM prestamo p "
+                + "JOIN solicitante s ON s.identificacion = p.solicitante_id "
+                + "JOIN equipo e ON e.codigo = p.equipo_codigo "
+                + "WHERE p.estado = ? AND p.fecha_devolucion_esperada < ? "
+                + "ORDER BY dias_atraso DESC";
+        List<PrestamoVencido> lista = new ArrayList<>();
+        try (Connection con = ConexionBD.obtenerConexion();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+                Date hoy = Date.valueOf(LocalDate.now());
+                ps.setDate(1, hoy);
+                ps.setString(2, EstadoPrestamo.ACTIVO.name());
+                ps.setDate(3, hoy);
+                try (ResultSet rs = ps.executeQuery()) {
+                    while (rs.next()) {
+                        lista.add(new PrestamoVencido(
+                            rs.getString("nombre"),
+                            rs.getString("codigo"),
+                            rs.getLong("dias_atraso")));
+                }
+            }
+            return lista;
+        } catch (SQLException e) {
+            throw new DatosException("Error al listar los prestamos vencidos", e);
+        }
     }
 }
