@@ -39,6 +39,7 @@ CREATE TABLE prestamo (
     fecha_devolucion_esperada DATE NOT NULL,
     fecha_devolucion_real DATE NULL,
     estado VARCHAR(10) NOT NULL DEFAULT 'ACTIVO',
+    renovaciones INT NOT NULL DEFAULT 0,
 
     CONSTRAINT fk_prestamo_solicitante
         FOREIGN KEY (solicitante_id)
@@ -63,7 +64,10 @@ CREATE TABLE prestamo (
             (estado = 'ACTIVO' AND fecha_devolucion_real IS NULL)
             OR
             (estado = 'DEVUELTO' AND fecha_devolucion_real IS NOT NULL)
-        )
+        ),
+    
+    CONSTRAINT ck_prestamo_renovaciones
+        CHECK (renovaciones BETWEEN 0 AND 1)
 ) ENGINE = InnoDB;
 
 -- Datos de prueba
@@ -81,13 +85,16 @@ INSERT INTO equipo (codigo, descripcion, tipo, estado) VALUES
 ('EQ-04', 'Tableta Samsung Galaxy Tab', 'Tableta',   'EN_REPARACION'),
 ('EQ-05', 'Cámara Canon EOS M50',       'Cámara',    'PRESTADO'),
 ('EQ-06', 'Laptop HP ProBook 450',      'Laptop',    'PRESTADO'),
-('EQ-07', 'Parlante JBL Charge 5',      'Audio',     'DISPONIBLE'),
-('EQ-08', 'Proyector BenQ MS560',       'Proyector', 'DISPONIBLE');
+('EQ-07', 'Parlante JBL Charge 5',      'Audio',     'PRESTADO'),
+('EQ-08', 'Proyector BenQ MS560',       'Proyector', 'PRESTADO');
 
 -- Ana (estudiante) ya tiene 2 préstamos activos: sirve para probar el límite (RN-02).
 -- Mario tiene un préstamo ya devuelto: sirve para el historial.
 INSERT INTO prestamo (solicitante_id, equipo_codigo, fecha_prestamo,
-                      fecha_devolucion_esperada, fecha_devolucion_real, estado) VALUES
-('1-1111-1111', 'EQ-05', '2026-10-05', '2026-10-20', NULL,         'ACTIVO'),
-('1-1111-1111', 'EQ-06', '2026-10-06', '2026-10-21', NULL,         'ACTIVO'),
-('4-4444-4444', 'EQ-01', '2026-09-20', '2026-09-27', '2026-09-26', 'DEVUELTO');
+                      fecha_devolucion_esperada, fecha_devolucion_real, estado, renovaciones) VALUES
+('1-1111-1111', 'EQ-05', '2026-10-05', '2026-10-20', NULL,         'ACTIVO', 0),
+('1-1111-1111', 'EQ-06', '2026-10-06', '2026-10-21', NULL,         'ACTIVO', 0),
+('4-4444-4444', 'EQ-01', '2026-09-20', '2026-09-27', '2026-09-26', 'DEVUELTO', 0),
+('2-2222-2222', 'EQ-07', '2026-10-15', '2026-12-15', NULL,         'ACTIVO',   0),
+('5-5555-5555', 'EQ-08', '2026-10-15', '2026-12-15', NULL,         'ACTIVO',   0);
+
