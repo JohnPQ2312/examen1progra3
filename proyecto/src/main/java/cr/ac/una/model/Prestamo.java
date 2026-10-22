@@ -19,13 +19,14 @@ public class Prestamo {
     private LocalDate fechaDevolucionEsperada;
     private LocalDate fechaDevolucionReal;
     private EstadoPrestamo estado;
+    private int renovaciones;
 
     public Prestamo() {
     }
 
     public Prestamo(Integer id, Solicitante solicitante, Equipo equipo,
             LocalDate fechaPrestamo, LocalDate fechaDevolucionEsperada,
-            LocalDate fechaDevolucionReal, EstadoPrestamo estado) {
+            LocalDate fechaDevolucionReal, EstadoPrestamo estado, int renovaciones) {
         this.id = id;
         this.solicitante = solicitante;
         this.equipo = equipo;
@@ -33,6 +34,7 @@ public class Prestamo {
         this.fechaDevolucionEsperada = fechaDevolucionEsperada;
         this.fechaDevolucionReal = fechaDevolucionReal;
         this.estado = estado;
+        this.renovaciones=renovaciones;
     }
 
     public Integer getId() {
@@ -90,6 +92,14 @@ public class Prestamo {
     public void setEstado(EstadoPrestamo estado) {
         this.estado = estado;
     }
+    
+    public int getRenovaciones(){
+        return renovaciones;
+    }
+    
+    public void setRenovaciones(int renovaciones){
+        this.renovaciones = renovaciones;
+    }
 
     @Override
     public String toString() {
@@ -101,6 +111,7 @@ public class Prestamo {
                 + ", fechaDevolucionEsperada=" + fechaDevolucionEsperada
                 + ", fechaDevolucionReal=" + fechaDevolucionReal
                 + ", estado=" + estado
+                + ", renovaciones=" + renovaciones
                 + '}';
     }
 }
