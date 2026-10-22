@@ -77,7 +77,7 @@ public class PrestamoService {
         equipo.setEstado(EstadoEquipo.PRESTADO);
         Prestamo prestamo = new Prestamo(
                 null, solicitante, equipo, hoy, fechaDevolucionEsperada,
-                null, EstadoPrestamo.ACTIVO);
+                null, EstadoPrestamo.ACTIVO,0);
         return prestamoRepository.insertarConEstadoEquipo(prestamo);
     }
 
