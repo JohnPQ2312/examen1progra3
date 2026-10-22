@@ -7,12 +7,9 @@ import cr.ac.una.repository.PrestamoRepository;
 import cr.ac.una.repository.SolicitanteRepository;
 import java.util.List;
 import java.util.Optional;
-import java.util.regex.Pattern;
 
 public class SolicitanteService {
-
-    private static final Pattern FORMATO_CORREO =
-            Pattern.compile("^[\\w.+-]+@[\\w-]+(\\.[\\w-]+)+$");
+    
     private static final int LIMITE_ESTUDIANTE = 2;
 
     private final SolicitanteRepository solicitanteRepository;
@@ -53,7 +50,7 @@ public class SolicitanteService {
                     "No existe un solicitante con identificacion "
                     + solicitante.getIdentificacion() + ".");
         }
- 
+
         if (solicitante.getTipo() == TipoSolicitante.ESTUDIANTE) {
             int activos = prestamoRepository.contarActivosPorSolicitante(
                     solicitante.getIdentificacion());
@@ -67,21 +64,25 @@ public class SolicitanteService {
         solicitanteRepository.actualizar(solicitante);
     }
 
-    private void validar(Solicitante s) {
-        if (s == null) {
-            throw new ValidacionException("Los datos del solicitante son obligatorios.");
+    private void validar(Solicitante solicitante) {
+        if (solicitante == null) {
+            throw new ValidacionException(
+                    "Los datos del solicitante son obligatorios.");
         }
-        if (s.getIdentificacion() == null || s.getIdentificacion().isBlank()) {
-            throw new ValidacionException("La identificación es obligatoria.");
-        }
-        if (s.getNombre() == null || s.getNombre().isBlank()) {
-            throw new ValidacionException("El nombre es obligatorio.");
-        }
-        if (s.getCorreo() == null || !FORMATO_CORREO.matcher(s.getCorreo()).matches()) {
-            throw new ValidacionException("El correo no tiene un formato válido.");
-        }
-        if (s.getTipo() == null) {
-            throw new ValidacionException("El tipo de solicitante es obligatorio.");
+
+        ValidadorDatos.textoObligatorio(
+                solicitante.getIdentificacion(),
+                "identificación del solicitante", 30);
+
+        ValidadorDatos.textoObligatorio(
+                solicitante.getNombre(),
+                "nombre del solicitante", 100);
+
+        ValidadorDatos.correo(solicitante.getCorreo());
+
+        if (solicitante.getTipo() == null) {
+            throw new ValidacionException(
+                    "El tipo de solicitante es obligatorio.");
         }
     }
 }

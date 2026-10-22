@@ -1,0 +1,99 @@
+Extractos de salidas reales compartidas por John, 22 de octubre de 2026.
+Se omiten repeticiones del menú. Entradas y resultados de P-24 a P-36.
+
+P-24. Registro y consulta del estado:
+Identificación del solicitante: 3-3333-3333
+Codigo del equipo: EQ-01
+Fecha esperada de devolución (AAAA-MM-DD): 2026-10-29
+  Prestamo #6 registrado. El equipo EQ-01 quedo PRESTADO.
+Consulta EQ-01:
+  EQ-01 | Laptop Dell Latitude 5440 | Laptop | PRESTADO
+
+P-25. Segundo intento con los mismos datos:
+  Rechazado: El equipo EQ-01 no está disponible (estado: PRESTADO).
+Consulta de activos de 3-3333-3333:
+  #6 | EQ-01 Laptop Dell Latitude 5440 | prestado 2026-10-22 | devolver 2026-10-29
+
+P-26. Devolución:
+Numero de prestamo: 6
+  Devolucion registrada el 2026-10-22. El equipo EQ-01 quedo DISPONIBLE.
+Consulta EQ-01:
+  EQ-01 | Laptop Dell Latitude 5440 | Laptop | DISPONIBLE
+Consulta de activos de 3-3333-3333:
+  El solicitante no tiene prestamos activos.
+
+P-27. Límite de estudiante:
+Identificación del solicitante: 1-1111-1111
+Codigo del equipo: EQ-01
+Fecha esperada de devolución (AAAA-MM-DD): 2026-10-29
+  Rechazado: Ana Mora Solís ya tiene 2 prestamos activos; el maximo para ESTUDIANTE es 2.
+Consulta EQ-01:
+  EQ-01 | Laptop Dell Latitude 5440 | Laptop | DISPONIBLE
+
+P-28. Renovación con identificador inválido:
+Numero de prestamo a renovar: 0
+  Rechazado: El numero de prestamo no es valido.
+
+P-29. Renovación de inexistente:
+Numero de prestamo a renovar: 999999
+  Rechazado: No existe un prestamo con numero 999999.
+
+P-30. Registro de solicitante:
+Identificacion: EV3-1022
+Nombre: Prueba Etapa 3
+Correo: prueba.ev3.1022@example.com
+Tipo (1 = ESTUDIANTE, 2 = FUNCIONARIO): 1
+  Solicitante registrado.
+
+P-31. Actualización:
+Identificación del solicitante a actualizar: EV3-1022
+  EV3-1022 | Prueba Etapa 3 | prueba.ev3.1022@example.com | ESTUDIANTE
+Nuevo nombre: Prueba Etapa 3 Actualizada
+Nuevo correo: prueba.ev3.1022.actualizada@example.com
+¿Cambiar tipo? (s/n): s
+Tipo (1 = ESTUDIANTE, 2 = FUNCIONARIO): 2
+  Solicitante actualizado.
+Consulta EV3-1022:
+  EV3-1022 | Prueba Etapa 3 Actualizada | prueba.ev3.1022.actualizada@example.com | FUNCIONARIO
+
+P-32. Actualización inválida:
+Identificación del solicitante a actualizar: EV3-1022
+Nuevo nombre:
+Nuevo correo: correo-sin-arroba
+¿Cambiar tipo? (s/n): n
+  Rechazado: El correo no tiene un formato válido.
+Consulta EV3-1022:
+  EV3-1022 | Prueba Etapa 3 Actualizada | prueba.ev3.1022.actualizada@example.com | FUNCIONARIO
+
+P-33. Registro de equipo:
+Codigo: EV3-EQ-1022
+Descripcion: Laptop de prueba Etapa 3
+Tipo (Laptop, Proyector, ...): Laptop
+  Equipo registrado como disponible.
+
+P-34. Actualización:
+Codigo del equipo a actualizar: EV3-EQ-1022
+  EV3-EQ-1022 | Laptop de prueba Etapa 3 | Laptop | DISPONIBLE
+Nueva descripcion: Equipo actualizado Etapa 3
+Nuevo tipo: Portatil
+¿Cambiar estado? (s/n): s
+Estado (1 = DISPONIBLE, 2 = EN_REPARACION): 2
+  Equipo actualizado.
+Consulta EV3-EQ-1022:
+  EV3-EQ-1022 | Equipo actualizado Etapa 3 | Portatil | EN_REPARACION
+
+P-35. Préstamo de equipo en reparación:
+Identificación del solicitante: EV3-1022
+Codigo del equipo: EV3-EQ-1022
+Fecha esperada de devolución (AAAA-MM-DD): 2026-10-29
+  Rechazado: El equipo EV3-EQ-1022 no está disponible (estado: EN_REPARACION).
+
+P-36. Cambio de estado incompatible con préstamo activo:
+Codigo del equipo a actualizar: EQ-05
+Nueva descripcion:
+Nuevo tipo:
+¿Cambiar estado? (s/n): s
+Estado (1 = DISPONIBLE, 2 = EN_REPARACION): 1
+  Rechazado: El equipo EQ-05 tiene un prestamo activo; registre primero la devolucion.
+Consulta EQ-05:
+  EQ-05 | Cámara Canon EOS M50 | Cámara | PRESTADO

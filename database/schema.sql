@@ -1,4 +1,4 @@
--- Etapa 2: esquema definitivo de préstamos de equipos con datos de prueba.
+-- Etapa 3: esquema de préstamos de equipos con renovaciones y datos de prueba.
 -- ADVERTENCIA: este script elimina y recrea examen_progra3 y sus datos.
 DROP DATABASE IF EXISTS examen_progra3;
 

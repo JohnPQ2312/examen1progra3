@@ -1,0 +1,8 @@
+Ejecución automatizada del 22 de octubre de 2026, hora de Costa Rica.
+cr.ac.una.EjemploPruebaTest: 2 pruebas, 0 fallos, 0 errores, 0 omitidas
+cr.ac.una.service.EquipoServiceTest: 6 pruebas, 0 fallos, 0 errores, 0 omitidas
+cr.ac.una.service.PrestamoServiceTest: 16 pruebas, 0 fallos, 0 errores, 0 omitidas
+cr.ac.una.service.SolicitanteServiceTest: 7 pruebas, 0 fallos, 0 errores, 0 omitidas
+cr.ac.una.service.ValidadorDatosTest: 17 pruebas, 0 fallos, 0 errores, 0 omitidas
+Total: 48 pruebas; 0 fallos; 0 errores; 0 omitidas.
+BUILD SUCCESS

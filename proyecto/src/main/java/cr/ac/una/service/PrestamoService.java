@@ -101,7 +101,7 @@ public class PrestamoService {
 
         Prestamo prestamo = prestamoRepository.buscarPorId(idPrestamo)
                 .orElseThrow(() -> new ValidacionException(
-                        "No existe un prestamo con nemero " + idPrestamo + "."));
+                        "No existe un prestamo con numero " + idPrestamo + "."));
         if (prestamo.getEstado() != EstadoPrestamo.ACTIVO) {
             throw new ValidacionException(
                     "El prestamo " + idPrestamo + " ya fue devuelto el "

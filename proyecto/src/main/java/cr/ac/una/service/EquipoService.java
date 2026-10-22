@@ -25,7 +25,7 @@ public class EquipoService {
         if (equipo.getEstado() == null) {
             equipo.setEstado(EstadoEquipo.DISPONIBLE);
         }
- 
+
         if (equipo.getEstado() == EstadoEquipo.PRESTADO) {
             throw new ValidacionException(
                     "Un equipo nuevo no puede registrarse como PRESTADO.");
@@ -70,18 +70,19 @@ public class EquipoService {
         equipoRepository.actualizar(equipo);
     }
 
-    private void validar(Equipo e) {
-        if (e == null) {
-            throw new ValidacionException("Los datos del equipo son obligatorios.");
+    private void validar(Equipo equipo) {
+        if (equipo == null) {
+            throw new ValidacionException(
+                    "Los datos del equipo son obligatorios.");
         }
-        if (e.getCodigo() == null || e.getCodigo().isBlank()) {
-            throw new ValidacionException("El codigo del equipo es obligatorio.");
-        }
-        if (e.getDescripcion() == null || e.getDescripcion().isBlank()) {
-            throw new ValidacionException("La descripcion es obligatoria.");
-        }
-        if (e.getTipo() == null || e.getTipo().isBlank()) {
-            throw new ValidacionException("El tipo de equipo es obligatorio.");
-        }
+
+        ValidadorDatos.textoObligatorio(
+                equipo.getCodigo(), "código del equipo", 20);
+
+        ValidadorDatos.textoObligatorio(
+                equipo.getDescripcion(), "descripción del equipo", 100);
+
+        ValidadorDatos.textoObligatorio(
+                equipo.getTipo(), "tipo de equipo", 50);
     }
 }
